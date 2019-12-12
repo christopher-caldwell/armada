@@ -1,5 +1,3 @@
-@import './boxes'
-  
 //////////////// Defaults /////////////////
 a
   text-decoration: none
@@ -71,7 +69,30 @@ a
     display: none
 
 ///////////////// Utilities /////////////////
+.cover-image
+  cursor: zoom-in
+
 .dense-col
   padding: 2% !important
   & .v-input
       margin-top: 0 !important
+
+
+///////////////////// Fonts ///////////////////////
+@font-face 
+  font-family: 'star-wars'
+  src: url('assets/fonts/star-jedi.ttf') format("woff2")
+
+  // Credit: Matt Pfingsten - jeditoren@nashvilleforce.com
+@font-face 
+  font-family: 'body-crawl'
+  src: url('assets/fonts/body-crawl.ttf') format("woff2")
+
+.star-wars-font
+  font-family: 'star-wars', arial
+
+.body-crawl-font
+  font-family: 'Franklin Gothic Medium', arial
+
+.sw-header
+  letter-spacing: 2px
