@@ -58,6 +58,10 @@ const routes = [
         path: '/profile',
         component: Profile
       },
+      {
+        path: '/build',
+        component: () => import('@/views/user/ships/FleetBuilder.vue')
+      },
     ]
   },
 ]

@@ -5,9 +5,9 @@ export const routes = [
     title: 'Home',
   },
   {
-    path: '/game',
+    path: '/build',
     icon: 'mdi-gamepad-variant',
-    title: 'Hiragana',
+    title: 'Build a Fleet',
   },
   {
     path: '/test',

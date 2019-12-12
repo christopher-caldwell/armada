@@ -1709,7 +1709,384 @@ const objectiveCards = [
     }
 ]
 
-const shipCards = [
+const imperialShipCards = [
+    {
+        'id': 1330,
+        'title': 'Arquitens Command Cruiser',
+        'image': 'arquitens-class-command-cruiser.png',
+        'set': 'ship',
+        'type': 'arquitens',
+        'points': 59,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'support-team': null,
+            'defensive-retrofit': null,
+            'turbolasers': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1331,
+        'title': 'Arquitens Light Cruiser',
+        'image': 'arquitens-class-light-cruiser.png',
+        'set': 'ship',
+        'type': 'arquitens',
+        'points': 54,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'defensive-retrofit': null,
+            'turbolasers': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1049,
+        'title': 'Gladiator I',
+        'image': 'gladiator-i.png',
+        'set': 'ship',
+        'type': 'gladiator-class-star-destroyer',
+        'points': 56,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'support-team': null,
+            'ordnance': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1050,
+        'title': 'Gladiator II',
+        'image': 'gladiator-ii.png',
+        'set': 'ship',
+        'type': 'gladiator-class-star-destroyer',
+        'points': 62,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'support-team': null,
+            'ordnance': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1291,
+        'title': 'Gozanti Assault Carriers',
+        'image': 'gozanti-class-assault-carriers.png',
+        'set': 'ship',
+        'type': 'gozanti',
+        'points': 28,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'officer': null,
+            'fleet-support': null,
+            'offensive-retrofit': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1290,
+        'title': 'Gozanti Cruisers',
+        'image': 'gozanti-class-cruisers.png',
+        'set': 'ship',
+        'type': 'gozanti',
+        'points': 23,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': false,
+        'upgrades': {
+            'officer': null,
+            'fleet-support': null,
+            'offensive-retrofit': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1203,
+        'title': 'Imperial I',
+        'image': 'imperial-i-class-star-destroyer.png',
+        'set': 'ship',
+        'type': 'imperial-class-star-destroyer',
+        'points': 110,
+        'faction': 'imperial',
+        'size': 'large',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'offensive-retrofit-2': null,
+            'ion-cannons': null,
+            'turbolasers': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1204,
+        'title': 'Imperial II',
+        'image': 'imperial-ii-class-star-destroyer.png',
+        'set': 'ship',
+        'type': 'imperial-class-star-destroyer',
+        'points': 120,
+        'faction': 'imperial',
+        'size': 'large',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'defensive-retrofit': null,
+            'ion-cannons': null,
+            'turbolasers': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1278,
+        'title': 'ISD Cymoon 1 Refit',
+        'image': 'isd-cymoon-1-refit.png',
+        'set': 'ship',
+        'type': 'imperial-class-star-destroyer',
+        'points': 112,
+        'faction': 'imperial',
+        'size': 'large',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'fleet-command': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'turbolasers': null,
+            'turbolasers-2': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1279,
+        'title': 'ISD Kuat Refit',
+        'image': 'isd-kuat-refit.png',
+        'set': 'ship',
+        'type': 'imperial-class-star-destroyer',
+        'points': 112,
+        'faction': 'imperial',
+        'size': 'large',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'defensive-retrofit': null,
+            'ion-cannons': null,
+            'ordnance': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1293,
+        'title': 'Interdictor Combat Refit',
+        'image': 'nterdictor-combat-refit.png',
+        'set': 'ship',
+        'type': 'interdictor',
+        'points': 93,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'support-team': null,
+            'offensive-retrofit': null,
+            'experimental-retrofit': null,
+            'ion-cannons': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1292,
+        'title': 'Interdictor Suppression Refit',
+        'image': 'interdictor-suppression-refit.png',
+        'set': 'ship',
+        'type': 'interdictor',
+        'points': 90,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': false,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'support-team': null,
+            'offensive-retrofit': null,
+            'experimental-retrofit': null,
+            'experimental-retrofit-2': null,
+            'ion-cannons': null,
+            'title': null
+        }
+    },
+    {
+        'id': 2666,
+        'title': 'Quasar Fire I',
+        'image': 'quasar-fire-i-class-cruiser-carrier.png',
+        'set': 'ship',
+        'type': 'quasar',
+        'points': 54,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'offensive-retrofit-2': null,
+            'title': null
+        }
+    },
+    {
+        'id': 2664,
+        'title': 'Quasar Fire II',
+        'image': 'quasar-fire-ii-class-cruiser-carrier.png',
+        'set': 'ship',
+        'type': 'quasar',
+        'points': 61,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'weapons-team-2': null,
+            'offensive-retrofit': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1201,
+        'title': 'Raider I',
+        'image': 'raider-i-class-corvette.png',
+        'set': 'ship',
+        'type': 'raider-class-corvette',
+        'points': 44,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'ordnance': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1202,
+        'title': 'Raider II',
+        'image': 'raider-ii-class-corvette.png',
+        'set': 'ship',
+        'type': 'raider-class-corvette',
+        'points': 48,
+        'faction': 'imperial',
+        'size': 'small',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'ion-cannons': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1051,
+        'title': 'Victory I',
+        'image': 'victory-i.png',
+        'set': 'ship',
+        'type': 'victory-class-star-destroyer',
+        'points': 73,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'turbolasers': null,
+            'ordnance': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1052,
+        'title': 'Victory II',
+        'image': 'victory-ii.png',
+        'set': 'ship',
+        'type': 'victory-class-star-destroyer',
+        'points': 85,
+        'faction': 'imperial',
+        'size': 'medium',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'weapons-team': null,
+            'offensive-retrofit': null,
+            'turbolasers': null,
+            'ion-cannons': null,
+            'title': null
+        }
+    },
+    {
+        'id': 1053,
+        'title': 'SSD Command Prototype',
+        'image': 'ssd-command-prototype.png',
+        'set': 'ship',
+        'type': 'super-star-destroyer',
+        'points': 220,
+        'faction': 'imperial',
+        'size': 'huge',
+        'dual': true,
+        'upgrades': {
+            'commander': null,
+            'officer': null,
+            'officer-2': null,
+            'officer-3': null,
+            'weapons-team': null,
+            'fleet-command': null,
+            'fleet-command-2': null,
+            'offensive-retrofit': null,
+            'ion-cannons': null,
+            'turbolasers': null,
+            'title': null
+        }
+    }
+]
+
+const rebelShipCards = [
     {
         'id': 1043,
         'title': 'Assault Frigate Mk2 A',
@@ -2083,383 +2460,6 @@ const shipCards = [
             'title': null
         }
     },
-    {
-        'id': 1330,
-        'title': 'Arquitens Command Cruiser',
-        'image': 'arquitens-class-command-cruiser.png',
-        'set': 'ship',
-        'type': 'arquitens',
-        'points': 59,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'support-team': null,
-            'defensive-retrofit': null,
-            'turbolasers': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1331,
-        'title': 'Arquitens Light Cruiser',
-        'image': 'arquitens-class-light-cruiser.png',
-        'set': 'ship',
-        'type': 'arquitens',
-        'points': 54,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'defensive-retrofit': null,
-            'turbolasers': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1049,
-        'title': 'Gladiator I',
-        'image': 'gladiator-i.png',
-        'set': 'ship',
-        'type': 'gladiator-class-star-destroyer',
-        'points': 56,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'support-team': null,
-            'ordnance': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1050,
-        'title': 'Gladiator II',
-        'image': 'gladiator-ii.png',
-        'set': 'ship',
-        'type': 'gladiator-class-star-destroyer',
-        'points': 62,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'support-team': null,
-            'ordnance': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1291,
-        'title': 'Gozanti Assault Carriers',
-        'image': 'swm18-gozanti-class-assault-carriers.png',
-        'set': 'ship',
-        'type': 'gozanti',
-        'points': 28,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'officer': null,
-            'fleet-support': null,
-            'offensive-retrofit': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1290,
-        'title': 'Gozanti Cruisers',
-        'image': 'swm18-gozanti-class-cruisers.png',
-        'set': 'ship',
-        'type': 'gozanti',
-        'points': 23,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': false,
-        'upgrades': {
-            'officer': null,
-            'fleet-support': null,
-            'offensive-retrofit': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1203,
-        'title': 'Imperial I',
-        'image': 'imperial-i-class-star-destroyer.png',
-        'set': 'ship',
-        'type': 'imperial-class-star-destroyer',
-        'points': 110,
-        'faction': 'imperial',
-        'size': 'large',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'offensive-retrofit-2': null,
-            'ion-cannons': null,
-            'turbolasers': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1204,
-        'title': 'Imperial II',
-        'image': 'imperial-ii-class-star-destroyer.png',
-        'set': 'ship',
-        'type': 'imperial-class-star-destroyer',
-        'points': 120,
-        'faction': 'imperial',
-        'size': 'large',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'defensive-retrofit': null,
-            'ion-cannons': null,
-            'turbolasers': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1278,
-        'title': 'ISD Cymoon 1 Refit',
-        'image': 'isd-cymoon-1-refit.png',
-        'set': 'ship',
-        'type': 'imperial-class-star-destroyer',
-        'points': 112,
-        'faction': 'imperial',
-        'size': 'large',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'fleet-command': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'turbolasers': null,
-            'turbolasers-2': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1279,
-        'title': 'ISD Kuat Refit',
-        'image': 'isd-kuat-refit.png',
-        'set': 'ship',
-        'type': 'imperial-class-star-destroyer',
-        'points': 112,
-        'faction': 'imperial',
-        'size': 'large',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'defensive-retrofit': null,
-            'ion-cannons': null,
-            'ordnance': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1293,
-        'title': 'Interdictor Combat Refit',
-        'image': 'swm14-interdictor-combat-refit.png',
-        'set': 'ship',
-        'type': 'interdictor',
-        'points': 93,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'support-team': null,
-            'offensive-retrofit': null,
-            'experimental-retrofit': null,
-            'ion-cannons': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1292,
-        'title': 'Interdictor Suppression Refit',
-        'image': 'swm16-interdictor-suppression-refit.png',
-        'set': 'ship',
-        'type': 'interdictor',
-        'points': 90,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': false,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'support-team': null,
-            'offensive-retrofit': null,
-            'experimental-retrofit': null,
-            'experimental-retrofit-2': null,
-            'ion-cannons': null,
-            'title': null
-        }
-    },
-    {
-        'id': 2666,
-        'title': 'Quasar Fire I',
-        'image': 'swm26-quasar-fire-i-class-cruiser-carrier.png',
-        'set': 'ship',
-        'type': 'quasar',
-        'points': 54,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'offensive-retrofit-2': null,
-            'title': null
-        }
-    },
-    {
-        'id': 2664,
-        'title': 'Quasar Fire II',
-        'image': 'swm26-quasar-fire-ii-class-cruiser-carrier.png',
-        'set': 'ship',
-        'type': 'quasar',
-        'points': 61,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'weapons-team-2': null,
-            'offensive-retrofit': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1201,
-        'title': 'Raider I',
-        'image': 'raider-i-class-corvette.png',
-        'set': 'ship',
-        'type': 'raider-class-corvette',
-        'points': 44,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'ordnance': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1202,
-        'title': 'Raider II',
-        'image': 'raider-ii-class-corvette.png',
-        'set': 'ship',
-        'type': 'raider-class-corvette',
-        'points': 48,
-        'faction': 'imperial',
-        'size': 'small',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'ion-cannons': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1051,
-        'title': 'Victory I',
-        'image': 'victory-i.png',
-        'set': 'ship',
-        'type': 'victory-class-star-destroyer',
-        'points': 73,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'turbolasers': null,
-            'ordnance': null,
-            'title': null
-        }
-    },
-    {
-        'id': 1052,
-        'title': 'Victory II',
-        'image': 'victory-ii.png',
-        'set': 'ship',
-        'type': 'victory-class-star-destroyer',
-        'points': 85,
-        'faction': 'imperial',
-        'size': 'medium',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'weapons-team': null,
-            'offensive-retrofit': null,
-            'turbolasers': null,
-            'ion-cannons': null,
-            'title': null
-        }
-    },
-    {
-        'divider': true
-    },
-    {
-        'id': 1053,
-        'title': 'SSD Command Prototype',
-        'image': 'ssd-command-prototype.png',
-        'set': 'ship',
-        'type': 'super-star-destroyer',
-        'points': 220,
-        'faction': 'imperial',
-        'size': 'huge',
-        'dual': true,
-        'upgrades': {
-            'commander': null,
-            'officer': null,
-            'officer-2': null,
-            'officer-3': null,
-            'weapons-team': null,
-            'fleet-command': null,
-            'fleet-command-2': null,
-            'offensive-retrofit': null,
-            'ion-cannons': null,
-            'turbolasers': null,
-            'title': null
-        }
-    }
 ]
 
 const squadronCards = [
@@ -3200,4 +3200,4 @@ const squadronCards = [
     }
 ]
 
-export {upgradeCards, shipCards, squadronCards, objectiveCards}
+export {upgradeCards, imperialShipCards, rebelShipCards, squadronCards, objectiveCards}

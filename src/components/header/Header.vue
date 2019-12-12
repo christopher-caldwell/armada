@@ -17,7 +17,7 @@
       v-app-bar-nav-icon( @click.stop="drawer = !drawer")
       v-toolbar-title.full-width
         v-row(justify='space-between')
-          v-col All About Sven
+          v-col Muster the Fleet
           v-col.flex-end(cols='2')
 </template>
 
