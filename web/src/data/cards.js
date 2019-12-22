@@ -1712,7 +1712,7 @@ const objectiveCards = [
 const imperialShipCards = [
     {
         'id': 1330,
-        'title': 'Arquitens Command Cruiser',
+        'title': 'Arquitens Command \nCruiser',
         'image': 'arquitens-class-command-cruiser.png',
         'set': 'ship',
         'type': 'arquitens',
