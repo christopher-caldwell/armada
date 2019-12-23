@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import gameSettings from '@/store/modules/gameSettings'
-import gameSummary from '@/store/modules/gameSummary'
+import ships from '@/store/modules/ships'
+import fleet from '@/store/modules/fleet'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    gameSettings,
-    gameSummary
+    ships,
+    fleet
   }
 })

@@ -6,7 +6,7 @@
       v-col(cols='5')
         SearchCards(@updateSearchTerm="updateSearchTerm")
     v-row
-      v-col(cols='3' v-for="(ship, index) in availableShips")
+      v-col(cols='3' v-for="(ship, index) in availableShips" v-if="determineIsValidShip(ship)")
         ShipCard(:ship="ship")
 </template>
 
@@ -16,6 +16,7 @@ import FilterCards from '@/components/ships/FilterCards.vue'
 import SearchCards from '@/components/ships/SearchCards.vue'
 import { filterShips } from '@/utilities/filtering'
 import { imperialShipCards } from '@/data/cards'
+import { mapGetters } from 'vuex'
   export default {
     name: 'FleetBuilder',
     components: {
@@ -30,6 +31,7 @@ import { imperialShipCards } from '@/data/cards'
       }
     },
     computed: {
+      ...mapGetters('fleet', ['totalPoints']),
       availableShips(){
         return filterShips(imperialShipCards, this.searchTerm)
       }
@@ -37,6 +39,9 @@ import { imperialShipCards } from '@/data/cards'
     methods: {
       updateSearchTerm(newTerm){
         this.updateSearchTerm = newTerm
+      },
+      determineIsValidShip(ship){
+        return this.totalPoints + ship.points < 400
       }
     }
   }

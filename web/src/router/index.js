@@ -10,11 +10,6 @@ const Login = () => import('@/views/visitor/Login.vue')
 const Register = () => import('@/views/visitor/Register.vue')
 const ForgotPassword = () => import('@/views/visitor/ForgotPassword.vue')
 
-// authenticated
-const Profile = () => import('@/views/user/Profile.vue')
-
-
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -54,10 +49,6 @@ const routes = [
       next()
     },
     children: [
-      {
-        path: '/profile',
-        component: Profile
-      },
       {
         path: '/build',
         component: () => import('@/views/user/ships/FleetBuilder.vue')

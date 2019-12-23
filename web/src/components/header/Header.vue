@@ -1,10 +1,21 @@
 <template lang='pug'>
   div
-    v-navigation-drawer(v-model="drawer" app clipped)
-      v-list.listing-listy.list(dense)
-        v-subheader Home
-        v-divider
-        NavMenuItem(v-for="(route, index) in routes" :key="index" :route="route")
+    v-navigation-drawer(v-model="drawer" app clipped width='350px')
+      v-tabs.internal-drawer-container(v-model="tab" grow)
+        v-tab(href='#tab-0' active-class='internal-drawer-container' ) Navigation
+        v-tab-item.internal-drawer-container(value='tab-0')
+          v-list.internal-drawer-container.listing-listy.list(dense)
+            v-subheader Home
+            v-divider
+            NavMenuItem(v-for="(route, index) in routes" :key="index" :route="route")
+        v-tab(href='#tab-1' @click="clearFleetNotifications")
+          div.text-center
+            v-badge(right color='red' :value="isNotificationBadgeShown")
+              template(v-slot:badge)
+                span {{ numberOfFleetNotifications }}
+              span Fleet
+        v-tab-item(value='tab-1')
+          FleetCardDisplay
       div.find-me
         v-switch(
           v-model="isDarkMode"
@@ -22,25 +33,36 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import NavMenuItem from '@/components/header/NavMenuItem.vue'
 import { routes } from '@/router/routes'
+import FleetCardDisplay from '@/components/fleet/FleetCardDisplay.vue'
 
 export default {
   components: {
-    NavMenuItem
+    NavMenuItem,
+    FleetCardDisplay
   },
   data() {
     return {
+      tab: null,
       routes,
       drawer: null,
       isDarkMode: false
     }
   },
+  computed: {
+    ...mapGetters('fleet', ['numberOfFleetNotifications']),
+    isNotificationBadgeShown(){
+      return this.numberOfFleetNotifications
+    }
+  },
   methods: {
+    ...mapActions('fleet', ['clearFleetNotifications']),
     saveDarkModeSetting() {
       window.localStorage.setItem( 'darkMode', JSON.stringify({ darkMode: !this.darkMode }))
       this.$vuetify.theme.dark = this.isDarkMode
-    }
+    },
   },
   mounted() {
     try {
@@ -59,6 +81,8 @@ export default {
   height: 40px
   width: 130px
   position: absolute
-  bottom: 20%
-  right: 2%
+  bottom: 5%
+  right: 4%
+.internal-drawer-container
+  height: 100%
 </style>
