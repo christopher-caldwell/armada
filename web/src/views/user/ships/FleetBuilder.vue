@@ -5,6 +5,7 @@
         FilterCards
       v-col(cols='5')
         SearchCards(@updateSearchTerm="updateSearchTerm")
+      v-col(cols='5')
     v-row
       v-col(cols='3' v-for="(ship, index) in availableShips" v-if="determineIsValidShip(ship)")
         ShipCard(:ship="ship")
@@ -22,7 +23,7 @@ import { mapGetters } from 'vuex'
     components: {
       ShipCard,
       FilterCards,
-      SearchCards
+      SearchCards,
     },
     data(){
       return {

@@ -12,12 +12,12 @@ export default {
     addShipToFleet({ commit, dispatch }, shipToBeAdded){
       const shipPoints = shipToBeAdded.points
       commit('ADD_SHIP_TO_FLEET', shipToBeAdded)
-      dispatch('fleet/updateFleetPoints', shipPoints , {root: true})
+      dispatch('fleet/updateFleetPoints', { shipPoints, action: 'add'}, {root: true})
       dispatch('fleet/addToFleetNotifications', {}, {root: true})
     },
-    removeShipFromFleet({ commit, dispatch, state }, idOfShipToBeRemoved){
+    removeShipFromFleet({ commit, dispatch, state }, { idOfShipToBeRemoved, shipPoints}){
       const newShips = state.ships.filter(ship => ship.id !== idOfShipToBeRemoved)
-      dispatch('fleet/updateFleetPoints', shipPoints , {root: true})
+      dispatch('fleet/updateFleetPoints',  { shipPoints, action: 'subtract' }, {root: true})
       commit('SET_NEW_SHIPS', newShips)
     },
   },

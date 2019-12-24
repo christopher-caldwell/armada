@@ -1,7 +1,6 @@
 <template lang='pug'>
   v-list-item
-    v-list-item-action
-      v-img(:src="require(`@/assets/cards/ships/imperial/${item.image}`)" max-height='25px' max-width='70px' position='top')
+    v-list-item-action {{ item.points }}
     v-list-item-content
       v-list-item-title {{item.title}}
     v-list-item-action
@@ -11,6 +10,7 @@
 
 <script>
 import { mapActions } from 'vuex'
+import CommanderIcon from '@/components/icons/Commander.vue'
   export default {
     name: 'FleetCard',
     props: {
@@ -19,10 +19,13 @@ import { mapActions } from 'vuex'
         required: true
       }
     },
+    components: {
+      CommanderIcon
+    },
     methods: {
       ...mapActions('ships', ['removeShipFromFleet']),
-      removeShip(idOfShipToBeRemoved){
-        this.removeShipFromFleet(idOfShipToBeRemoved)
+      removeShip(idOfShipToBeRemoved, shipPoints){
+        this.removeShipFromFleet({ idOfShipToBeRemoved, shipPoints })
       }
     }
   }

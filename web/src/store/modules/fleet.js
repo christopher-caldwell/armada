@@ -3,6 +3,7 @@ export default {
   state: {
     numberOfFleetNotifications: 0,
     totalPoints: 0,
+    fleetName: ''
   },
   getters: {
     totalPoints(state){
@@ -13,8 +14,11 @@ export default {
     },
   },
   actions: {
-    updateFleetPoints({ commit, state }, incomingPoints){
-      const newPointTotal = state.totalPoints + incomingPoints
+    updateFleetPoints({ commit, state }, { shipPoints, action }){
+
+      const newPointTotal = action === 'add'
+      ? state.totalPoints + shipPoints
+      : state.totalPoints - shipPoints
       commit('UPDATE_TOTAL_POINTS', newPointTotal)
     },
     addToFleetNotifications({ commit }){
@@ -22,6 +26,9 @@ export default {
     },
     clearFleetNotifications({ commit }){
       commit('CLEAR_FlEET_NOTIFICATIONS')
+    },
+    updateFleetName({ commit }, fleetName){
+      commit('UPDATE_FLEET_NAME', fleetName)
     }
   },
   mutations: {
@@ -33,6 +40,9 @@ export default {
     },
     CLEAR_FlEET_NOTIFICATIONS(state){
       state.numberOfFleetNotifications = 0
+    },
+    UPDATE_FLEET_NAME(state, fleetName){
+      state.fleetName = fleetName
     }
   }
 }

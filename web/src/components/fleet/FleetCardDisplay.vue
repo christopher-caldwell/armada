@@ -5,7 +5,13 @@
       v-col(cols='1')
       v-col(cols='4') Fleet Name: 
       v-col(cols='6') 
-        v-text-field(outlined dense label='Name')
+        v-text-field(
+          outlined 
+          dense 
+          label='Name' 
+          v-model="fleetName" 
+          @blur="sendUpdateFleetName"
+        )
     v-divider
     v-row(align='baseline')
       v-col(cols='1')
@@ -16,10 +22,12 @@
     v-subheader Ships
     v-divider
     FleetCard( v-for="(ship, index) in ships" :item="ship")
+    v-subheader Squadrons
+    v-divider
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import FleetCard from '@/components/fleet/FleetCard'
   export default {
     name: 'FleetCardDisplay',
@@ -29,6 +37,17 @@ import FleetCard from '@/components/fleet/FleetCard'
     computed: {
       ...mapGetters('ships', ['ships']),
       ...mapGetters('fleet', ['totalPoints']),
+    },
+    data(){
+      return {
+        fleetName: ''
+      }
+    },
+    methods: {
+      ...mapActions('fleet', ['updateFleetName']),
+      sendUpdateFleetName(){
+        this.updateFleetName(this.fleetName)
+      }
     }
   }
 </script>
