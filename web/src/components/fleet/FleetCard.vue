@@ -1,18 +1,18 @@
 <template lang='pug'>
-  v-expansion-panel
-    v-expansion-panel-header 
-      v-row 
-        v-col.truncate {{ item.title }}
-        v-col(cols='3' align='start') {{ item.points }}
-    v-expansion-panel-content
-      v-row 
-        v-col {{ item.size }}
-        v-col 
-          v-btn(text @click="removeShip(item.id, item.points)")
-            v-icon mdi-delete
-      v-row
-        v-col
-          UpgradeIcon(upgradeName='commander')
+  v-row(align='start' justify='space-between')
+    v-col.no-padding(cols='2' align='center') 
+      v-icon.delete-icon(@click="removeShip(item.id, item.points)") mdi-delete
+    v-col(cols='10')
+      v-expansion-panels
+        v-expansion-panel
+          v-expansion-panel-header 
+            v-row 
+              v-col.truncate {{ item.title }}
+              v-col(cols='3' align='start') {{ item.points }}
+          v-expansion-panel-content
+            v-row
+              v-col
+                UpgradeIcon(upgradeName='commander')
 </template>
 
 <script>
@@ -46,9 +46,12 @@ import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
 
 <style lang="sass" scoped>
 .truncate
-  width: 280px !important
+  width: 200px !important
   white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
+.delete-icon
+  margin-left: 10px
+  margin-top: 60%
 
 </style>
