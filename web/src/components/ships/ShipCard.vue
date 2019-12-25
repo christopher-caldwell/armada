@@ -5,7 +5,8 @@
       max-height='130px'
       position='top'
     )
-    v-card-title.ship-title {{ ship.title }}
+    v-row(justify='start')
+      v-col.truncate.ship-title(cols='10' align='start') {{ ship.title }}
     v-row(justify='space-between')
       v-col(cols='5')
         v-card-actions
@@ -36,5 +37,11 @@ import { mapActions } from 'vuex'
 
 <style lang='sass' scoped>
   .ship-title
-    font-size: 0.95em
+    margin-left: 10px
+  .truncate
+    width: 150px !important
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
 </style>

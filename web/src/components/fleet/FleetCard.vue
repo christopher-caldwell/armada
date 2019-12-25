@@ -1,16 +1,24 @@
 <template lang='pug'>
-  v-list-item
-    v-list-item-action {{ item.points }}
-    v-list-item-content
-      v-list-item-title {{item.title}}
-    v-list-item-action
-      v-btn(text @click="removeShip(item.id, item.points)")
-        v-icon mdi-delete
+  v-expansion-panel
+    v-expansion-panel-header 
+      v-row 
+        v-col.truncate {{ item.title }}
+        v-col(cols='3' align='start') {{ item.points }}
+    v-expansion-panel-content
+      v-row 
+        v-col {{ item.size }}
+        v-col 
+          v-btn(text @click="removeShip(item.id, item.points)")
+            v-icon mdi-delete
+      v-row
+        v-col
+          UpgradeIcon(upgradeName='commander')
 </template>
 
 <script>
 import { mapActions } from 'vuex'
-import CommanderIcon from '@/components/icons/Commander.vue'
+// import CommanderIcon from '@/components/icons/Commander.vue'
+import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
   export default {
     name: 'FleetCard',
     props: {
@@ -20,7 +28,12 @@ import CommanderIcon from '@/components/icons/Commander.vue'
       }
     },
     components: {
-      CommanderIcon
+      UpgradeIcon
+    },
+    computed: {
+      allowableUpgrades(){
+        return Object.keys(this.item.upgrades)
+      }
     },
     methods: {
       ...mapActions('ships', ['removeShipFromFleet']),
@@ -30,3 +43,12 @@ import CommanderIcon from '@/components/icons/Commander.vue'
     }
   }
 </script>
+
+<style lang="sass" scoped>
+.truncate
+  width: 280px !important
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+</style>

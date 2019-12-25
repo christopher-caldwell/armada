@@ -21,7 +21,10 @@
     v-subheader
     v-subheader Ships
     v-divider
-    FleetCard( v-for="(ship, index) in ships" :item="ship")
+    v-row(align='center' justify='center')
+      v-col(cols='11')
+        v-expansion-panels
+          FleetCard( v-for="(ship, index) in ships" :item="ship")
     v-subheader Squadrons
     v-divider
 </template>
