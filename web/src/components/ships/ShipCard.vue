@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import uuid from 'uuid/v4'
 import { mapActions } from 'vuex'
   export default {
     name: 'ShipCard',
@@ -28,7 +29,11 @@ import { mapActions } from 'vuex'
     },
     methods: {
       ...mapActions('ships',['addShipToFleet']),
-      addShip(ship){
+      addShip(selectedShip){
+        const shipToAdd = {
+          ...ship,
+          trackableId: uuid()
+        }
         this.addShipToFleet(ship)
       }
     }
