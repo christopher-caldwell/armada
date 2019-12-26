@@ -21,14 +21,14 @@
     v-subheader
     v-subheader Ships
     v-divider
-    FleetCard( v-for="(ship, index) in ships" :item="ship")
+    FleetCard( v-for="(ship, index) in ships" :ship="ship" :key="ship.id + index")
     v-subheader Squadrons
     v-divider
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import FleetCard from '@/components/fleet/FleetCard'
+import FleetCard from '@/components/fleet/ShipFleetCard'
   export default {
     name: 'FleetCardDisplay',
     components: {

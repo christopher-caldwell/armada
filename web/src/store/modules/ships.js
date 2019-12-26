@@ -16,7 +16,7 @@ export default {
       dispatch('fleet/addToFleetNotifications', {}, {root: true})
     },
     removeShipFromFleet({ commit, dispatch, state }, { idOfShipToBeRemoved, shipPoints}){
-      const newShips = state.ships.filter(ship => ship.id !== idOfShipToBeRemoved)
+      const newShips = state.ships.filter(ship => ship.trackableId !== idOfShipToBeRemoved)
       dispatch('fleet/updateFleetPoints',  { shipPoints, action: 'subtract' }, {root: true})
       commit('SET_NEW_SHIPS', newShips)
     },

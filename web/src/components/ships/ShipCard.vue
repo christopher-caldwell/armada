@@ -31,10 +31,10 @@ import { mapActions } from 'vuex'
       ...mapActions('ships',['addShipToFleet']),
       addShip(selectedShip){
         const shipToAdd = {
-          ...ship,
+          ...selectedShip,
           trackableId: uuid()
         }
-        this.addShipToFleet(ship)
+        this.addShipToFleet(shipToAdd)
       }
     }
   }

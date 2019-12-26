@@ -25,6 +25,10 @@ const routes = [
         path: '/build',
         component: () => import('@/views/user/ships/FleetBuilder.vue')
       },
+      {
+        path: '/upgrades',
+        component: () => import('@/views/user/ships/Upgrades.vue')
+      },
     ]
   },
 ]
