@@ -3,7 +3,9 @@ export default {
   state: {
     numberOfFleetNotifications: 0,
     totalPoints: 0,
-    fleetName: ''
+    fleetName: '',
+    hasCommanderBeenChosen: false,
+    chosenFaction: 'imperial'
   },
   getters: {
     totalPoints(state){
@@ -12,6 +14,9 @@ export default {
     numberOfFleetNotifications(state){
       return state.numberOfFleetNotifications
     },
+    hasCommanderBeenChosen(state){
+      return state.hasCommanderBeenChosen
+    }
   },
   actions: {
     updateFleetPoints({ commit, state }, { shipPoints, action }){
@@ -29,6 +34,9 @@ export default {
     },
     updateFleetName({ commit }, fleetName){
       commit('UPDATE_FLEET_NAME', fleetName)
+    },
+    updateFaction({ commit }, factionName){
+     commit('UPDATE_FACTION', factionName) 
     }
   },
   mutations: {
@@ -43,6 +51,12 @@ export default {
     },
     UPDATE_FLEET_NAME(state, fleetName){
       state.fleetName = fleetName
+    },
+    UPDATE_COMMANDER_STATUS(state){
+      state.hasCommanderBeenChosen = !state.hasCommanderBeenChosen
+    },
+    UPDATE_FACTION(state, chosenFaction){
+      state.chosenFaction = chosenFaction
     }
   }
 }
