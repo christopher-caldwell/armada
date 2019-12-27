@@ -7,8 +7,8 @@
         SearchCards(@updateSearchTerm="updateSearchTerm")
       v-col(cols='5')
     v-row
-      v-col(cols='3' v-for="(ship, index) in availableShips" v-if="determineIsValidShip(ship)")
-        ShipCard(:ship="ship")
+      v-col(cols='3' v-for="(upgrade, index) in availableUpgrades" v-if="determineIsValidUpgrade(upgrade)")
+        UpgradeCard(:upgrade="upgrade")
 </template>
 
 <script>
@@ -16,6 +16,7 @@ import FilterCards from '@/components/ships/FilterCards.vue'
 import SearchCards from '@/components/ships/SearchCards.vue'
 import UpgradeCard from '@/components/upgrades/UpgradeCard.vue'
 import { filterShips } from '@/utilities/filtering'
+import { upgradeCards } from '@/data/cards'
 import { mapGetters } from 'vuex'
   export default {
     name: 'Upgrades',
@@ -24,27 +25,35 @@ import { mapGetters } from 'vuex'
       FilterCards,
       SearchCards
     },
-    mounted(){
-      console.log(this.$route)
-    },
     data(){
       return {
         searchTerm: '',
-        imperialShipCards
+        upgradeCards,
+        baseUpgradeSet: [],
+        availableUpgrades: []
       }
+    },
+    created(){
+      const upgradeType = this.$route.query.type
+      const faction = this.$store.state.fleet.chosenFaction
+      let selectedUpgradeCardSet
+      if(upgradeType === 'commander'){
+        selectedUpgradeCardSet = upgradeCards[upgradeType][faction]
+      } else {
+        selectedUpgradeCardSet = upgradeCards[upgradeType]
+      }
+      this.baseUpgradeSet = selectedUpgradeCardSet
+      this.availableUpgrades = selectedUpgradeCardSet
     },
     computed: {
       ...mapGetters('fleet', ['totalPoints']),
-      availableShips(){
-        return filterShips(imperialShipCards, this.searchTerm)
-      }
     },
     methods: {
       updateSearchTerm(newTerm){
-        this.updateSearchTerm = newTerm
+        this.availableUpgrades = filterShips(this.baseUpgradeSet, newTerm)
       },
-      determineIsValidShip(ship){
-        return this.totalPoints + ship.points < 400
+      determineIsValidUpgrade(upgrade){
+        return this.totalPoints + upgrade.points < 400
       }
     }
   }

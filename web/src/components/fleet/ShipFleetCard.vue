@@ -12,7 +12,7 @@
           v-expansion-panel-content
             v-row
               v-col
-                router-link( v-for="upgrade in allowableUpgrades" :to="`/upgrades?type=${upgrade}&shipId=${ship.trackableId}`")
+                router-link( v-for="upgrade in allowableUpgrades" :to="`/upgrades?type=${upgrade[0]}&shipId=${ship.trackableId}`")
                   UpgradeIcon(upgradeName="commander" :equippedCard="upgrade[1]")
 </template>
 

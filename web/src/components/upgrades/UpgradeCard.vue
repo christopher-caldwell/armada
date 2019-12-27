@@ -1,7 +1,7 @@
 <template lang='pug'>
   v-card
     v-img(
-      :src="require(`@/assets/cards/upgrades/${upgradeType}/${ship.image}`)"
+      :src="require(`@/assets/cards/upgrades/${upgradeType}/${upgrade.image}`)"
       max-height='130px'
       position='top'
     )
@@ -29,7 +29,7 @@ import { mapActions } from 'vuex'
     },
     computed: {
       upgradeType(){
-        return this.$route.query.upgrdadeType
+        return this.$route.query.type
       }
     },
     methods: {

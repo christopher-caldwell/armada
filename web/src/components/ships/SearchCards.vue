@@ -5,7 +5,7 @@
     clearable
     hide-details
     v-model="searchTerm"
-    @change="updateSearchTerm"
+    @input="updateSearchTerm_1"
   )
 </template>
 
@@ -17,7 +17,7 @@
       }
     },
     methods: {
-      updateSearchTerm(){
+      updateSearchTerm_1(){
         this.$emit('updateSearchTerm', this.searchTerm)
       }
     }
