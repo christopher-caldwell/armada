@@ -1916,7 +1916,7 @@ const imperialShipCards = [
     {
         'id': 1331,
         'title': 'Arquitens Light Cruiser',
-        'image': 'arquitens-class-light-cruiser.png',
+        'image': 'arquitens-class-light-cruiser.jpg',
         'set': 'ship',
         'type': 'arquitens',
         'points': 54,
@@ -1934,7 +1934,7 @@ const imperialShipCards = [
     {
         'id': 1049,
         'title': 'Gladiator I',
-        'image': 'gladiator-i.png',
+        'image': 'gladiator-i.jpg',
         'set': 'ship',
         'type': 'gladiator-class-star-destroyer',
         'points': 56,
@@ -1953,7 +1953,7 @@ const imperialShipCards = [
     {
         'id': 1050,
         'title': 'Gladiator II',
-        'image': 'gladiator-ii.png',
+        'image': 'gladiator-ii.jpg',
         'set': 'ship',
         'type': 'gladiator-class-star-destroyer',
         'points': 62,
@@ -1972,7 +1972,7 @@ const imperialShipCards = [
     {
         'id': 1291,
         'title': 'Gozanti Assault Carriers',
-        'image': 'gozanti-class-assault-carriers.png',
+        'image': 'gozanti-class-assault-carriers.jpg',
         'set': 'ship',
         'type': 'gozanti',
         'points': 28,
@@ -1989,7 +1989,7 @@ const imperialShipCards = [
     {
         'id': 1290,
         'title': 'Gozanti Cruisers',
-        'image': 'gozanti-class-cruisers.png',
+        'image': 'gozanti-class-cruisers.jpg',
         'set': 'ship',
         'type': 'gozanti',
         'points': 23,
@@ -2006,7 +2006,7 @@ const imperialShipCards = [
     {
         'id': 1203,
         'title': 'Imperial I',
-        'image': 'imperial-i-class-star-destroyer.png',
+        'image': 'imperial-i-class-star-destroyer.jpg',
         'set': 'ship',
         'type': 'imperial-class-star-destroyer',
         'points': 110,
@@ -2027,7 +2027,7 @@ const imperialShipCards = [
     {
         'id': 1204,
         'title': 'Imperial II',
-        'image': 'imperial-ii-class-star-destroyer.png',
+        'image': 'imperial-ii-class-star-destroyer.jpg',
         'set': 'ship',
         'type': 'imperial-class-star-destroyer',
         'points': 120,
@@ -2048,7 +2048,7 @@ const imperialShipCards = [
     {
         'id': 1278,
         'title': 'ISD Cymoon 1 Refit',
-        'image': 'isd-cymoon-1-refit.png',
+        'image': 'isd-cymoon-1-refit.jpg',
         'set': 'ship',
         'type': 'imperial-class-star-destroyer',
         'points': 112,
@@ -2069,7 +2069,7 @@ const imperialShipCards = [
     {
         'id': 1279,
         'title': 'ISD Kuat Refit',
-        'image': 'isd-kuat-refit.png',
+        'image': 'isd-kuat-refit.jpg',
         'set': 'ship',
         'type': 'imperial-class-star-destroyer',
         'points': 112,
@@ -2090,7 +2090,7 @@ const imperialShipCards = [
     {
         'id': 1293,
         'title': 'Interdictor Combat Refit',
-        'image': 'nterdictor-combat-refit.png',
+        'image': 'nterdictor-combat-refit.jpg',
         'set': 'ship',
         'type': 'interdictor',
         'points': 93,
@@ -2110,7 +2110,7 @@ const imperialShipCards = [
     {
         'id': 1292,
         'title': 'Interdictor Suppression Refit',
-        'image': 'interdictor-suppression-refit.png',
+        'image': 'interdictor-suppression-refit.jpg',
         'set': 'ship',
         'type': 'interdictor',
         'points': 90,
@@ -2131,7 +2131,7 @@ const imperialShipCards = [
     {
         'id': 2666,
         'title': 'Quasar Fire I',
-        'image': 'quasar-fire-i-class-cruiser-carrier.png',
+        'image': 'quasar-fire-i-class-cruiser-carrier.jpg',
         'set': 'ship',
         'type': 'quasar',
         'points': 54,
@@ -2150,7 +2150,7 @@ const imperialShipCards = [
     {
         'id': 2664,
         'title': 'Quasar Fire II',
-        'image': 'quasar-fire-ii-class-cruiser-carrier.png',
+        'image': 'quasar-fire-ii-class-cruiser-carrier.jpg',
         'set': 'ship',
         'type': 'quasar',
         'points': 61,
@@ -2169,7 +2169,7 @@ const imperialShipCards = [
     {
         'id': 1201,
         'title': 'Raider I',
-        'image': 'raider-i-class-corvette.png',
+        'image': 'raider-i-class-corvette.jpg',
         'set': 'ship',
         'type': 'raider-class-corvette',
         'points': 44,
@@ -2188,7 +2188,7 @@ const imperialShipCards = [
     {
         'id': 1202,
         'title': 'Raider II',
-        'image': 'raider-ii-class-corvette.png',
+        'image': 'raider-ii-class-corvette.jpg',
         'set': 'ship',
         'type': 'raider-class-corvette',
         'points': 48,
@@ -2207,7 +2207,7 @@ const imperialShipCards = [
     {
         'id': 1051,
         'title': 'Victory I',
-        'image': 'victory-i.png',
+        'image': 'victory-i.jpg',
         'set': 'ship',
         'type': 'victory-class-star-destroyer',
         'points': 73,
@@ -2227,7 +2227,7 @@ const imperialShipCards = [
     {
         'id': 1052,
         'title': 'Victory II',
-        'image': 'victory-ii.png',
+        'image': 'victory-ii.jpg',
         'set': 'ship',
         'type': 'victory-class-star-destroyer',
         'points': 85,
@@ -2247,7 +2247,7 @@ const imperialShipCards = [
     {
         'id': 1053,
         'title': 'SSD Command Prototype',
-        'image': 'ssd-command-prototype.png',
+        'image': 'ssd-command-prototype.jpg',
         'set': 'ship',
         'type': 'super-star-destroyer',
         'points': 220,
