@@ -472,7 +472,7 @@ iVBORw0KGgoAAAANSUhEUgAAADcAAAA2CAYAAABjhwHjAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAA
 
 <script>
 export default {
-  name: 'CommanderIcon',
+  name: 'Commander',
   props: {
     isFilled: {
       type: Boolean,

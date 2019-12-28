@@ -1,462 +1,556 @@
 const upgradeCards = {
-    'title': [
-        {
-            'id': 1237,
-            'title': 'Admonition',
-            'image': 'admonition.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc30c-frigate']
-        },
-        {
-            'id': 1010,
-            'title': 'Aspiration',
-            'image': 'aspiration.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc75-cruiser']
-        },
-        {
-            'id': 1232,
-            'title': 'Avenger',
-            'image': 'avenger.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['imperial-class-star-destroyer']
-        },
-        {
-            'id': 1326,
-            'title': 'Bright Hope',
-            'image': 'bright-hope.png',
-            'set': 'title',
-            'points': 2,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['gr-75']
-        },
-        {
-            'id': 1391,
-            'title': 'Centicore',
-            'image': 'centicore.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['arquitens']
-        },
-        {
-            'id': 1280,
-            'title': 'Chimaera',
-            'image': 'chimaera.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['imperial-class-star-destroyer']
-        },
-        {
-            'id': 1107,
-            'title': 'Corrupter',
-            'image': 'corrupter.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['victory-class-star-destroyer']
-        },
-        {
-            'id': 1239,
-            'title': 'Defiance',
-            'image': 'defiance.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-cruiser']
-        },
-        {
-            'id': 1118,
-            'title': 'Demolisher',
-            'image': 'demolisher.png',
-            'set': 'title',
-            'points': 10,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['gladiator-class-star-destroyer']
-        },
-        {
-            'id': 1233,
-            'title': 'Devastator',
-            'image': 'devastator.png',
-            'set': 'title',
-            'points': 10,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['imperial-class-star-destroyer']
-        },
-        {
-            'id': 1110,
-            'title': "Dodonna's Pride",
-            'image': 'dodonnas-pride.png',
-            'set': 'title',
-            'points': 6,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['corvette']
-        },
-        {
-            'id': 1108,
-            'title': 'Dominator',
-            'image': 'dominator.png',
-            'set': 'title',
-            'points': 12,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['victory-class-star-destroyer']
-        },
-        {
-            'id': 1327,
-            'title': 'Endeavor',
-            'image': 'endeavor.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-liberty']
-        },
-        {
-            'id': 1238,
-            'title': 'Foresight',
-            'image': 'foresight.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc30c-frigate']
-        },
-        {
-            'id': 1116,
-            'title': 'Gallant Haven',
-            'image': 'gallant-haven.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['assault-frigate']
-        },
-        {
-            'id': 2788,
-            'title': "Garel's Honor",
-            'image': 'swm27-garels-honor.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['hammerhead']
-        },
-        {
-            'id': 1397,
-            'title': 'Hand of Justice',
-            'image': 'hand-of-justice.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['arquitens']
-        },
-        {
-            'id': 1240,
-            'title': 'Home One',
-            'image': 'home-one.png',
-            'set': 'title',
-            'points': 7,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-cruiser']
-        },
-        {
-            'id': 1235,
-            'title': 'Impetuous',
-            'image': 'impetuous.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['raider-class-corvette']
-        },
-        {
-            'id': 1241,
-            'title': 'Independence',
-            'image': 'independence.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-cruiser']
-        },
-        {
-            'id': 1119,
-            'title': 'Insidious',
-            'image': 'insidious.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['gladiator-class-star-destroyer']
-        },
-        {
-            'id': 1236,
-            'title': 'Instigator',
-            'image': 'instigator.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['raider-class-corvette']
-        },
-        {
-            'id': 1324,
-            'title': 'Interdictor',
-            'image': 'interdictor.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['interdictor']
-        },
-        {
-            'id': 1111,
-            'title': "Jaina's Light",
-            'image': 'jainas-light.png',
-            'set': 'title',
-            'points': 2,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['corvette']
-        },
-        {
-            'id': 1328,
-            'title': 'Liberty',
-            'image': 'liberty.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-liberty']
-        },
-        {
-            'id': 1329,
-            'title': 'Mon Karren',
-            'image': 'mon-karren.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc80-liberty']
-        },
-        {
-            'id': 1117,
-            'title': 'Paragon',
-            'image': 'paragon.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['assault-frigate']
-        },
-        {
-            'id': 1401,
-            'title': 'Phoenix Home',
-            'image': 'phoenix-home.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['pelta']
-        },
-        {
-            'id': 1281,
-            'title': 'Profundity',
-            'image': 'profundity.png',
-            'set': 'title',
-            'points': 7,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['mc75-cruiser']
-        },
-        {
-            'id': 2667,
-            'title': 'Pursuant',
-            'image': 'pursuant.png',
-            'set': 'title',
-            'points': 2,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['quasar']
-        },
-        {
-            'id': 1325,
-            'title': 'Quantum Storm',
-            'image': 'quantum-storm.png',
-            'set': 'title',
-            'points': 1,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['gr-75']
-        },
-        {
-            'id': 1113,
-            'title': 'Redemption',
-            'image': 'redemption.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['nebulon-b']
-        },
-        {
-            'id': 1234,
-            'title': 'Relentless',
-            'image': 'relentless.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['imperial-class-star-destroyer']
-        },
-        {
-            'id': 1114,
-            'title': 'Salvation',
-            'image': 'salvation.png',
-            'set': 'title',
-            'points': 7,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['nebulon-b']
-        },
-        {
-            'id': 1011,
-            'title': 'Sovereign',
-            'image': 'sovereign.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['imperial-class-star-destroyer']
-        },
-        {
-            'id': 2668,
-            'title': 'Squall',
-            'image': 'squall.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['quasar']
-        },
-        {
-            'id': 2669,
-            'title': 'Stronghold',
-            'image': 'stronghold.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['quasar']
-        },
-        {
-            'id': 1323,
-            'title': 'Suppressor',
-            'image': 'suppressor.png',
-            'set': 'title',
-            'points': 4,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['gozanti']
-        },
-        {
-            'id': 1112,
-            'title': 'Tantive IV',
-            'image': 'tantive-iv.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['corvette']
-        },
-        {
-            'id': 1322,
-            'title': 'Vector',
-            'image': 'vector.png',
-            'set': 'title',
-            'points': 2,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['gozanti']
-        },
-        {
-            'id': 1109,
-            'title': 'Warlord',
-            'image': 'warlord.png',
-            'set': 'title',
-            'points': 8,
-            'faction': 'imperial',
-            'unique': true,
-            'ship': ['victory-class-star-destroyer']
-        },
-        {
-            'id': 1115,
-            'title': 'Yavaris',
-            'image': 'yavaris.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'rebel',
-            'unique': true,
-            'ship': ['nebulon-b']
-        },
-        {
-            'id': 1001,
-            'title': 'Mon Calamari Exodus Fleet',
-            'image': 'mon-calamari-exodus-fleet.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'rebel',
-            'ship': ['mc30c-frigate', 'mc75-cruiser', 'mc80-cruiser', 'mc80-liberty']
-        },
-        {
-            'id': 1007,
-            'title': 'Seventh Fleet Star Destroyer',
-            'image': 'seventh-fleet.png',
-            'set': 'title',
-            'points': 5,
-            'faction': 'imperial',
-            'ship': ['gladiator-class-star-destroyer', 'imperial-class-star-destroyer', 'victory-class-star-destroyer']
-        },
-        {
-            'id': 2787,
-            'title': 'Task Force Antilles',
-            'image': 'swm27-task-force-antilles.png',
-            'set': 'title',
-            'points': 3,
-            'faction': 'rebel',
-            'ship': 'hammerhead'
-        },
-        {
-            'id': 2786,
-            'title': 'Task Force Organa',
-            'image': 'swm27-task-force-organa.png',
-            'set': 'title',
-            'points': 1,
-            'faction': 'rebel',
-            'ship': 'hammerhead'
-        }
-    ],
+    'title': {
+        'rebel': [
+            {
+                'id': 1237,
+                'title': 'Admonition',
+                'image': 'admonition.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc30c-frigate']
+            },
+            {
+                'id': 1010,
+                'title': 'Aspiration',
+                'image': 'aspiration.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc75-cruiser']
+            },
+            {
+                'id': 1326,
+                'title': 'Bright Hope',
+                'image': 'bright-hope.png',
+                'set': 'title',
+                'points': 2,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['gr-75']
+            },
+            {
+                'id': 1239,
+                'title': 'Defiance',
+                'image': 'defiance.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-cruiser']
+            },            
+            {
+                'id': 1110,
+                'title': "Dodonna's Pride",
+                'image': 'dodonnas-pride.png',
+                'set': 'title',
+                'points': 6,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['corvette']
+            },
+            {
+                'id': 1327,
+                'title': 'Endeavor',
+                'image': 'endeavor.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-liberty']
+            },
+            {
+                'id': 1238,
+                'title': 'Foresight',
+                'image': 'foresight.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc30c-frigate']
+            },
+            {
+                'id': 1116,
+                'title': 'Gallant Haven',
+                'image': 'gallant-haven.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['assault-frigate']
+            },
+            {
+                'id': 2788,
+                'title': "Garel's Honor",
+                'image': 'swm27-garels-honor.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['hammerhead']
+            },
+            {
+                'id': 1240,
+                'title': 'Home One',
+                'image': 'home-one.png',
+                'set': 'title',
+                'points': 7,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-cruiser']
+            },
+            {
+                'id': 1241,
+                'title': 'Independence',
+                'image': 'independence.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-cruiser']
+            },
+            {
+                'id': 1111,
+                'title': "Jaina's Light",
+                'image': 'jainas-light.png',
+                'set': 'title',
+                'points': 2,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['corvette']
+            },
+            {
+                'id': 1328,
+                'title': 'Liberty',
+                'image': 'liberty.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-liberty']
+            },
+            {
+                'id': 1329,
+                'title': 'Mon Karren',
+                'image': 'mon-karren.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc80-liberty']
+            },
+            {
+                'id': 1117,
+                'title': 'Paragon',
+                'image': 'paragon.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['assault-frigate']
+            },
+            {
+                'id': 1401,
+                'title': 'Phoenix Home',
+                'image': 'phoenix-home.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['pelta']
+            },
+            {
+                'id': 1281,
+                'title': 'Profundity',
+                'image': 'profundity.png',
+                'set': 'title',
+                'points': 7,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['mc75-cruiser']
+            },
+            {
+                'id': 1325,
+                'title': 'Quantum Storm',
+                'image': 'quantum-storm.png',
+                'set': 'title',
+                'points': 1,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['gr-75']
+            },
+            {
+                'id': 1113,
+                'title': 'Redemption',
+                'image': 'redemption.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['nebulon-b']
+            },
+            {
+                'id': 1114,
+                'title': 'Salvation',
+                'image': 'salvation.png',
+                'set': 'title',
+                'points': 7,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['nebulon-b']
+            },
+            {
+                'id': 1112,
+                'title': 'Tantive IV',
+                'image': 'tantive-iv.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['corvette']
+            },
+            {
+                'id': 1115,
+                'title': 'Yavaris',
+                'image': 'yavaris.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'rebel',
+                'unique': true,
+                'ship': ['nebulon-b']
+            },
+            {
+                'id': 1001,
+                'title': 'Mon Calamari Exodus Fleet',
+                'image': 'mon-calamari-exodus-fleet.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'rebel',
+                'ship': ['mc30c-frigate', 'mc75-cruiser', 'mc80-cruiser', 'mc80-liberty']
+            },
+            {
+                'id': 2787,
+                'title': 'Task Force Antilles',
+                'image': 'swm27-task-force-antilles.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'rebel',
+                'ship': 'hammerhead'
+            },
+            {
+                'id': 2786,
+                'title': 'Task Force Organa',
+                'image': 'swm27-task-force-organa.png',
+                'set': 'title',
+                'points': 1,
+                'faction': 'rebel',
+                'ship': 'hammerhead'
+            }
+            
+        ],
+        'imperial': [
+            {
+                'id': 1232,
+                'title': 'Avenger',
+                'image': 'avenger.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'imperial-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1391,
+                'title': 'Centicore',
+                'image': 'centicore.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'arquitens': true
+                }
+            },
+            {
+                'id': 1280,
+                'title': 'Chimaera',
+                'image': 'chimaera.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'imperial-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1107,
+                'title': 'Corrupter',
+                'image': 'corrupter.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'victory-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1233,
+                'title': 'Devastator',
+                'image': 'devastator.png',
+                'set': 'title',
+                'points': 10,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'imperial-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1118,
+                'title': 'Demolisher',
+                'image': 'demolisher.png',
+                'set': 'title',
+                'points': 10,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'gladiator-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1108,
+                'title': 'Dominator',
+                'image': 'dominator.png',
+                'set': 'title',
+                'points': 12,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'victory-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1397,
+                'title': 'Hand of Justice',
+                'image': 'hand-of-justice.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'arquitens': true
+                }
+            },
+            {
+                'id': 1235,
+                'title': 'Impetuous',
+                'image': 'impetuous.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'raider-class-corvette': true
+                }
+            },
+            {
+                'id': 1119,
+                'title': 'Insidious',
+                'image': 'insidious.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'gladiator-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1236,
+                'title': 'Instigator',
+                'image': 'instigator.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'raider-class-corvette': true
+                }
+            },
+            {
+                'id': 1324,
+                'title': 'Interdictor',
+                'image': 'interdictor.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'interdictor': true
+                }
+            },
+            {
+                'id': 2667,
+                'title': 'Pursuant',
+                'image': 'pursuant.png',
+                'set': 'title',
+                'points': 2,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'quasar': true
+                }
+            },
+            {
+                'id': 1234,
+                'title': 'Relentless',
+                'image': 'relentless.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'imperial-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1011,
+                'title': 'Sovereign',
+                'image': 'sovereign.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'imperial-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 2668,
+                'title': 'Squall',
+                'image': 'squall.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'quasar': true
+                }
+            },
+            {
+                'id': 2669,
+                'title': 'Stronghold',
+                'image': 'stronghold.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'quasar': true
+                }
+            },
+            {
+                'id': 1323,
+                'title': 'Suppressor',
+                'image': 'suppressor.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'gozanti': true
+                }
+            },
+            {
+                'id': 1322,
+                'title': 'Vector',
+                'image': 'vector.png',
+                'set': 'title',
+                'points': 2,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'gozanti': true
+                }
+            },
+            {
+                'id': 1109,
+                'title': 'Warlord',
+                'image': 'warlord.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'imperial',
+                'unique': true,
+                'ship': {
+                    'victory-class-star-destroyer': true
+                }
+            },
+            {
+                'id': 1007,
+                'title': 'Seventh Fleet Star Destroyer',
+                'image': 'seventh-fleet.png',
+                'set': 'title',
+                'points': 5,
+                'faction': 'imperial',
+                'ship': {
+                    'gladiator-class-star-destroyer': true, 
+                    'imperial-class-star-destroyer': true,
+                    'victory-class-star-destroyer': true,
+                    'super-star-destroyer': true
+                }
+            },
+            {
+                'id': 121213,
+                'title': 'Annihilator',
+                'image': 'annihilator.png',
+                'set': 'title',
+                'points': 8,
+                'faction': 'imperial',
+                'ship': {
+                    'super-star-destroyer': true
+                }
+            },
+            {
+                'id': 1212134663,
+                'title': 'Eclipse',
+                'image': 'eclipse.png',
+                'set': 'title',
+                'points': 3,
+                'faction': 'imperial',
+                'ship': {
+                    'super-star-destroyer': true
+                }
+            },
+            {
+                'id': 1444663,
+                'title': 'Executor',
+                'image': 'executor.png',
+                'set': 'title',
+                'points': 2,
+                'faction': 'imperial',
+                'ship': {
+                    'super-star-destroyer': true
+                }
+            },
+            {
+                'id': 177745743,
+                'title': 'Ravager',
+                'image': 'ravager.png',
+                'set': 'title',
+                'points': 4,
+                'faction': 'imperial',
+                'ship': {
+                    'super-star-destroyer': true
+                }
+            },
+        ]
+    },
     'turbolasers': [
 
         {
@@ -1230,9 +1324,45 @@ const upgradeCards = {
             'unique': true
         },
         {
+            'id': 1309,
+            'title': 'Commander Gherant',
+            'image': 'commander-gherant.png',
+            'set': 'officer',
+            'points': 2,
+            'faction': 'imperial',
+            'unique': true
+        },
+        {
+            'id': 1121209,
+            'title': 'Darth Vader',
+            'image': 'darth-vader.png',
+            'set': 'officer',
+            'points': 1,
+            'faction': 'imperial',
+            'unique': true
+        },
+        {
             'id': 1078,
             'title': 'Director Isard',
             'image': 'director-isard.png',
+            'set': 'officer',
+            'points': 3,
+            'faction': 'imperial',
+            'unique': true
+        },
+        {
+            'id': 1072128,
+            'title': 'Director Krennic',
+            'image': 'director-krennic.png',
+            'set': 'officer',
+            'points': 8,
+            'faction': 'imperial',
+            'unique': true
+        },
+        {
+            'id': 107212128,
+            'title': 'Emperor Palpatine',
+            'image': 'emperor-palpatine.png',
             'set': 'officer',
             'points': 3,
             'faction': 'imperial',
@@ -1253,6 +1383,15 @@ const upgradeCards = {
             'image': 'instructor-goran.png',
             'set': 'officer',
             'points': 7,
+            'faction': 'imperial',
+            'unique': true
+        },
+        {
+            'id': 1011212,
+            'title': 'Lira Wessex',
+            'image': 'lira-wessex.png',
+            'set': 'officer',
+            'points': 2,
             'faction': 'imperial',
             'unique': true
         },
@@ -1519,6 +1658,15 @@ const upgradeCards = {
               'image': 'admiral-ozzel.png',
               'set': 'commander',
               'points': 20,
+              'faction': 'imperial',
+              'unique': true
+            },
+            {
+              'id': 1179,
+              'title': 'Admiral Piett',
+              'image': 'admiral-piett.png',
+              'set': 'commander',
+              'points': 22,
               'faction': 'imperial',
               'unique': true
             },

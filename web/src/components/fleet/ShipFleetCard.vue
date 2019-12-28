@@ -14,10 +14,10 @@
               v-col
                 router-link( 
                   v-for="upgrade in allowableUpgrades" 
-                  :to="`/upgrades?type=${upgrade[0]}`"
+                  :to="`/upgrades?type=${upgrade[0]}&shipType=${ship.type}`"
                   @click.native="updateTarget(ship, upgrade[0])"
                 )
-                  UpgradeIcon(upgradeName="commander" :equippedCard="upgrade[1]" :addShadow="determineAddShadow(upgrade[0], ship)")
+                  UpgradeIcon(:upgradeName="upgrade[0]" :equippedCard="upgrade[1]" :addShadow="determineAddShadow(upgrade[0], ship)")
             v-row(v-if="ship.upgrades[targetUpgrade]")
               v-col(cols='2') {{ ship.upgrades[targetUpgrade].points }}
               v-col.truncate(cols='8') {{ ship.upgrades[targetUpgrade].title }}

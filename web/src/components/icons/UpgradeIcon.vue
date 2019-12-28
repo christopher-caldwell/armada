@@ -1,13 +1,16 @@
 <template lang="pug">
-  Icon.upgrade-icon(height='25px' width='25px' :isFilled="!!equippedCard" :addShadow="addShadow")
+  component.upgrade-icon(
+    height='25px' 
+    width='25px' 
+    :isFilled="!!equippedCard" 
+    :addShadow="addShadow" 
+    :is="componentFile"
+  )
 </template>
 
 <script>
 export default {
   name: 'UpgradeIcon',
-  beforeCreate() {
-    this.$options.components.Icon = () => import(`@/components/icons/${this.upgradeName}.vue`)
-  },
   props: {
     upgradeName: {
       type: String,
@@ -22,6 +25,12 @@ export default {
       required: true
     }
   },
+  computed: {
+    componentFile(){
+      const upgradeName = this.$options.propsData.upgradeName
+      return () => import(`@/components/icons/${upgradeName}.vue`)
+    }
+  }
 }
 </script>
 

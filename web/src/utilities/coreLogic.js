@@ -1,15 +1,37 @@
 export const determineCardsToBeShown = config => {
-  const { upgradeType, faction, upgradeCards } = config
-  let selectedUpgradeCardSet
-  if(upgradeType === 'commander' || upgradeType === 'officer'){
-    selectedUpgradeCardSet = upgradeCards[upgradeType][faction]
+  const { upgradeType, faction, upgradeCards, shipType } = config
+  if(actionMap[upgradeType]) {
+    return actionMap[upgradeType](faction, upgradeType, upgradeCards, shipType)
   } else {
-    selectedUpgradeCardSet = upgradeCards[upgradeType]
+    // normal cards that do not require special logic
+    return upgradeCards[upgradeType]
   }
-  return selectedUpgradeCardSet
 }
 
 export const determineIfAddButtonIsDisabled = config => {
   const { upgrade, hasCommanderBeenChosen } = config
   return upgrade.set === 'commander' && hasCommanderBeenChosen
+}
+
+const commander = (faction, upgradeType, upgradeCards) => {
+  return upgradeCards[upgradeType][faction]
+}
+
+const title = (faction, upgradeType, upgradeCards, shipType) => {
+  const cardsToFilter = upgradeCards[upgradeType][faction]
+  return cardsToFilter.filter(card => {
+    const typeOfShip = shipType
+    return card.ship[typeOfShip]
+  })
+}
+
+const officer = (faction, upgradeType, upgradeCards) => {
+  const cardsToFilter = upgradeCards[upgradeType]
+  return cardsToFilter.filter(card => card.faction === faction)
+}
+
+const actionMap = {
+  commander,
+  title,
+  officer
 }

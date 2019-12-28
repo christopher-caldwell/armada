@@ -86,7 +86,8 @@ import { mapGetters } from 'vuex'
       updateCards(){
         const upgradeType = this.$route.query.type
         const faction = this.$store.state.fleet.chosenFaction
-        const config = { upgradeType, faction, upgradeCards }
+        const shipType = this.$route.query.shipType
+        const config = { upgradeType, faction, upgradeCards, shipType }
         const selectedUpgradeCardSet = determineCardsToBeShown(config)
         this.baseUpgradeSet = selectedUpgradeCardSet
         this.availableUpgrades = selectedUpgradeCardSet
