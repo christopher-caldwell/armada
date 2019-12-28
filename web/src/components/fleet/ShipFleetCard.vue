@@ -1,8 +1,6 @@
 <template lang='pug'>
-  v-row(align='start' justify='space-between')
-    v-col.no-padding(cols='2' align='center') 
-      v-icon.delete-icon(@click="removeShip(ship.trackableId, ship.points)") mdi-delete
-    v-col(cols='10')
+  v-row.ship-row(align='start' justify='space-between')
+    v-col(cols='10' align='center')
       v-expansion-panels
         v-expansion-panel
           v-expansion-panel-header 
@@ -11,9 +9,8 @@
               v-col(cols='3' align='start') {{ ship.points }}
           v-expansion-panel-content
             v-row
-              v-col
+              v-col.no-padding(v-for="upgrade in allowableUpgrades" cols='2')
                 router-link( 
-                  v-for="upgrade in allowableUpgrades" 
                   :to="`/upgrades?type=${upgrade[0]}&shipType=${ship.type}`"
                   @click.native="updateTarget(ship, upgrade[0])"
                 )
@@ -23,6 +20,8 @@
               v-col.truncate(cols='8') {{ ship.upgrades[targetUpgrade].title }}
               v-col(cols='1')
                 v-icon(@click="removeUpgrade(ship.upgrades[targetUpgrade])") mdi-delete
+    v-col.no-padding(cols='2' align='start') 
+      v-icon.delete-icon(@click="removeShip(ship.trackableId, ship.points)") mdi-delete
 </template>
 
 <script>
@@ -80,5 +79,7 @@ import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
   margin-left: 10px
   margin-top: 60%
   cursor: pointer
+.ship-row
+  padding-left: 10px
 
 </style>
