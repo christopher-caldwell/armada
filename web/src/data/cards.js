@@ -1897,7 +1897,7 @@ const imperialShipCards = [
     {
         'id': 1330,
         'title': 'Arquitens Command \nCruiser',
-        'image': 'arquitens-class-command-cruiser.png',
+        'image': 'arquitens-class-command-cruiser.jpg',
         'set': 'ship',
         'type': 'arquitens',
         'points': 59,
