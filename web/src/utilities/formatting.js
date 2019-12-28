@@ -19,3 +19,5 @@ const convertSecondsToMinutes = seconds => {
 export const formatSeconds = seconds => {
   return convertSecondsToMinutes(seconds)
 }
+
+export const capitalizeWord = wordToCapitalize => wordToCapitalize[0].toUpperCase() + wordToCapitalize.substr(1).toLowerCase()

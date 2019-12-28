@@ -1,15 +1,15 @@
-import shuffle from 'shuffle-array'
-
-export const determineLetters = (isShuffled, lettersToTest, maxNumberOfLetters) => {
-  const lengthOfLetters = lettersToTest.length
-  // if the max amount is more than the array length, cut the array at its length to avoid error
-  const cutOffPoint = maxNumberOfLetters <= lengthOfLetters ? maxNumberOfLetters : lengthOfLetters
-  if(isShuffled){
-    const shuffledLetters = shuffle(lettersToTest)
-    shuffledLetters.length = cutOffPoint
-    return shuffledLetters
+export const determineCardsToBeShown = config => {
+  const { upgradeType, faction, upgradeCards } = config
+  let selectedUpgradeCardSet
+  if(upgradeType === 'commander' || upgradeType === 'officer'){
+    selectedUpgradeCardSet = upgradeCards[upgradeType][faction]
   } else {
-    lettersToTest.length = cutOffPoint
-    return lettersToTest
+    selectedUpgradeCardSet = upgradeCards[upgradeType]
   }
+  return selectedUpgradeCardSet
+}
+
+export const determineIfAddButtonIsDisabled = config => {
+  const { upgrade, hasCommanderBeenChosen } = config
+  return upgrade.set === 'commander' && hasCommanderBeenChosen
 }

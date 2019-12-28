@@ -1,13 +1,12 @@
 <template lang='pug'>
   v-container
     v-row(justify='center' align='center')
-      v-col(cols='5')
+      v-col(cols='6' md='5')
         FilterCards
-      v-col(cols='5')
+      v-col(cols='6' md='5')
         SearchCards(@updateSearchTerm="updateSearchTerm")
-      v-col(cols='5')
     v-row
-      v-col(cols='3' v-for="(ship, index) in availableShips" v-if="determineIsValidShip(ship)")
+      v-col(cols='6' md='3' v-for="(ship, index) in availableShips" v-if="determineIsValidShip(ship)")
         ShipCard(:ship="ship")
 </template>
 

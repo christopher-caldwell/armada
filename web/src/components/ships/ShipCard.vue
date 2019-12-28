@@ -4,9 +4,19 @@
       :src="require(`@/assets/cards/ships/imperial/${ship.image}`)"
       max-height='130px'
       position='top'
+      @load="finishLoading"
     )
+      template(name='placeholder')
+        v-skeleton-loader(
+          v-if="!imageDoneLoading"
+          class="mx-auto"
+          max-width="300"
+          max-height='130px'
+          type="image"
+        )
     v-row(justify='start')
-      v-col.truncate.ship-title(cols='10' align='start') {{ ship.title }}
+      v-col.truncate.ship-title(cols='8' align='start') {{ ship.title }}
+      v-col(cols='3' align='start') {{ ship.points }}
     v-row(justify='space-between')
       v-col(cols='5')
         v-card-actions
@@ -27,6 +37,11 @@ import { mapActions } from 'vuex'
         required: true
       }
     },
+    data(){
+      return {
+        imageDoneLoading: false
+      }
+    },
     methods: {
       ...mapActions('ships',['addShipToFleet']),
       addShip(selectedShip){
@@ -35,6 +50,9 @@ import { mapActions } from 'vuex'
           trackableId: uuid()
         }
         this.addShipToFleet(shipToAdd)
+      },
+      finishLoading(){
+        this.imageDoneLoading = true
       }
     }
   }

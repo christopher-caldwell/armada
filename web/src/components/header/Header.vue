@@ -25,7 +25,13 @@
           hide-details
         )
     v-app-bar(app clipped-left)
-      v-app-bar-nav-icon( @click.stop="drawer = !drawer")
+      v-badge#menu-badge(left color='red' :value="isNotificationBadgeShown" v-if="isMobile")
+        template(v-slot:badge)
+          span {{ numberOfFleetNotifications }}
+        span(@click.stop="drawer = !drawer")
+          v-btn(icon)
+            v-icon mdi-menu
+      v-app-bar-nav-icon(v-else)
       v-toolbar-title.full-width
         v-row(justify='space-between')
           v-col Muster the Fleet
@@ -55,6 +61,9 @@ export default {
     ...mapGetters('fleet', ['numberOfFleetNotifications']),
     isNotificationBadgeShown(){
       return this.numberOfFleetNotifications
+    },
+    isMobile(){
+      return window.innerWidth < 1264
     }
   },
   methods: {
@@ -77,12 +86,15 @@ export default {
 </script>
 
 <style lang='sass'>
-.find-me
-  height: 40px
-  width: 130px
-  position: absolute
-  bottom: 5%
-  right: 4%
-.internal-drawer-container
-  height: 100%
+  .find-me
+    height: 40px
+    width: 130px
+    position: absolute
+    bottom: 5%
+    right: 4%
+  .internal-drawer-container
+    height: 100%
+  #menu-badge
+    left: -1px !important
+    top: 1px !important
 </style>

@@ -9,6 +9,7 @@
     viewBox="0 0 55 54"
     :height="height"
     :width="width"
+    :style="styles"
   >
     <metadata>
       <vectornator:setting key="DisplayWhiteBackground" value="0" />
@@ -490,7 +491,17 @@ export default {
     width: {
       type: String,
       required: true
-    }
+    },
+    addShadow: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    shadowColor: {
+      type: String,
+      required: false,
+      default: 'blue'
+    },
   },
   computed: {
     fillColor(){
@@ -501,6 +512,11 @@ export default {
         ? '#5cb85c' // success
         : '#84848c' //error
       }
+    },
+    styles(){
+      return this.addShadow ? {
+        filter: `drop-shadow(-1px 0 3px ${this.shadowColor})`
+      } : null
     }
   }
 }

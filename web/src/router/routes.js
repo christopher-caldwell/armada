@@ -6,7 +6,7 @@ export const routes = [
   },
   {
     path: '/build',
-    icon: 'mdi-gamepad-variant',
+    icon: 'mdi-rocket',
     title: 'Build a Fleet',
   },
   {

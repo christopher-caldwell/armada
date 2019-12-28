@@ -12,12 +12,21 @@
           v-expansion-panel-content
             v-row
               v-col
-                router-link( v-for="upgrade in allowableUpgrades" :to="`/upgrades?type=${upgrade[0]}&shipId=${ship.trackableId}`")
-                  UpgradeIcon(upgradeName="commander" :equippedCard="upgrade[1]")
+                router-link( 
+                  v-for="upgrade in allowableUpgrades" 
+                  :to="`/upgrades?type=${upgrade[0]}`"
+                  @click.native="updateTarget(ship, upgrade[0])"
+                )
+                  UpgradeIcon(upgradeName="commander" :equippedCard="upgrade[1]" :addShadow="determineAddShadow(upgrade[0], ship)")
+            v-row(v-if="ship.upgrades[targetUpgrade]")
+              v-col(cols='2') {{ ship.upgrades[targetUpgrade].points }}
+              v-col.truncate(cols='8') {{ ship.upgrades[targetUpgrade].title }}
+              v-col(cols='1')
+                v-icon(@click="removeUpgrade(ship.upgrades[targetUpgrade])") mdi-delete
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
   export default {
     name: 'FleetCard',
@@ -27,18 +36,35 @@ import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
         required: true
       }
     },
+    data(){
+      return {
+        targetUpgrade: null
+      }
+    },
     components: {
       UpgradeIcon
     },
     computed: {
+      ...mapGetters('fleet', ['targetShip']),
       allowableUpgrades(){
         return Object.entries(this.ship.upgrades)
-      }
+      },
     },
     methods: {
-      ...mapActions('ships', ['removeShipFromFleet']),
-      removeShip(idOfShipToBeRemoved, shipPoints){
-        this.removeShipFromFleet({ idOfShipToBeRemoved, shipPoints })
+      ...mapActions('ships', ['removeShipFromFleet', 'removeUpgradeFromShip']),
+      ...mapActions('fleet', ['updateTargetShip']),
+      removeShip(idOfShipToBeRemoved, points){
+        this.removeShipFromFleet({ idOfShipToBeRemoved, points })
+      },
+      removeUpgrade(upgrade){
+        this.removeUpgradeFromShip(upgrade)
+      },
+      updateTarget(targetShip, upgradeType){
+        this.targetUpgrade = upgradeType
+        this.updateTargetShip(targetShip)
+      },
+      determineAddShadow(upgrade, ship){
+        return this.targetUpgrade === upgrade && this.targetShip.trackableId === ship.trackableId
       }
     }
   }

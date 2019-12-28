@@ -1,5 +1,5 @@
 <template lang="pug">
-  Icon(height='20px' width='20px' :isFilled="!!equippedCard")
+  Icon.upgrade-icon(height='25px' width='25px' :isFilled="!!equippedCard" :addShadow="addShadow")
 </template>
 
 <script>
@@ -15,8 +15,17 @@ export default {
     },
     equippedCard: {
       required: true,
-      validator: prop => typeof prop === 'string' || prop === null
+      validator: prop => typeof prop === 'object' || prop === null
+    },
+    addShadow: {
+      type: Boolean,
+      required: true
     }
   },
 }
 </script>
+
+<style lang='sass' scoped>
+  .upgrade-icon
+    margin: 0 3px
+</style>

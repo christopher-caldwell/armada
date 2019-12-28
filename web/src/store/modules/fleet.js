@@ -5,7 +5,8 @@ export default {
     totalPoints: 0,
     fleetName: '',
     hasCommanderBeenChosen: false,
-    chosenFaction: 'imperial'
+    chosenFaction: 'imperial',
+    targetShip: null
   },
   getters: {
     totalPoints(state){
@@ -16,14 +17,16 @@ export default {
     },
     hasCommanderBeenChosen(state){
       return state.hasCommanderBeenChosen
+    },
+    targetShip(state){
+      return state.targetShip
     }
   },
   actions: {
-    updateFleetPoints({ commit, state }, { shipPoints, action }){
-
+    updateFleetPoints({ commit, state }, { points, action }){
       const newPointTotal = action === 'add'
-      ? state.totalPoints + shipPoints
-      : state.totalPoints - shipPoints
+      ? state.totalPoints + points
+      : state.totalPoints - points
       commit('UPDATE_TOTAL_POINTS', newPointTotal)
     },
     addToFleetNotifications({ commit }){
@@ -37,7 +40,13 @@ export default {
     },
     updateFaction({ commit }, factionName){
      commit('UPDATE_FACTION', factionName) 
-    }
+    },
+    updateCommanderStatus({ commit }){
+     commit('UPDATE_COMMANDER_STATUS') 
+    },
+    updateTargetShip({ commit }, targetShip){
+     commit('UPDATE_TARGET_SHIP', targetShip) 
+    },
   },
   mutations: {
     UPDATE_TOTAL_POINTS(state, newTotalPoints){
@@ -57,6 +66,9 @@ export default {
     },
     UPDATE_FACTION(state, chosenFaction){
       state.chosenFaction = chosenFaction
+    },
+    UPDATE_TARGET_SHIP(state, targetShip){
+      state.targetShip = targetShip
     }
   }
 }
