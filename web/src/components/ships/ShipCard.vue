@@ -1,5 +1,5 @@
 <template lang='pug'>
-  v-card
+  v-card.ship-card
     v-img(
       :src="require(`@/assets/cards/ships/imperial/${ship.image}`)"
       max-height='130px'
@@ -66,5 +66,7 @@ import { mapActions } from 'vuex'
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+  .ship-card
+    border-radius: 10px !important
 
 </style>
