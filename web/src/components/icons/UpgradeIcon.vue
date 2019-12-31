@@ -1,14 +1,9 @@
 <template lang="pug">
-  component.upgrade-icon(
-    height='25px' 
-    width='25px' 
-    :isFilled="!!equippedCard" 
-    :addShadow="addShadow" 
-    :is="componentFile"
-  )
+  span.armada-font.upgrade-icon( :style="styles") {{ iconText }}
 </template>
 
 <script>
+import { fontMapping } from '@/data/config'
 export default {
   name: 'UpgradeIcon',
   props: {
@@ -26,9 +21,24 @@ export default {
     }
   },
   computed: {
-    componentFile(){
-      const upgradeName = this.$options.propsData.upgradeName
-      return () => import(`@/components/icons/${upgradeName}.vue`)
+    iconColor(){
+      if(this.isUnableToBeFilled){
+        return '#d9534f' // gray
+      } else {
+        return this.equippedCard
+        ? '#5cb85c' // success
+        : '#84848c' //error
+      }
+    },
+    styles(){
+      return this.addShadow ? {
+        filter: `drop-shadow(-1px 0 3px ${this.shadowColor})`
+      } : {
+        color: this.iconColor
+      }
+    },
+    iconText(){
+      return fontMapping[this.upgradeName]
     }
   }
 }
@@ -36,5 +46,5 @@ export default {
 
 <style lang='sass' scoped>
   .upgrade-icon
-    margin: 0 3px
+    font-size: 2em
 </style>

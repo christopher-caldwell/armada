@@ -24,7 +24,7 @@ export const fontMapping = {
   'weapons-team-2': 'X',
   'ion-cannons': 'Y',
   'support-team': 'Z',
-  'turbo-lasers': '[',
+  'turbolasers': '[',
   'defensive-retrofit': ']',
   'fleet-support': 'f',
   'fleet-command': 'f', // needs icon
