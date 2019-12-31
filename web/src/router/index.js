@@ -21,15 +21,18 @@ const routes = [
       next()
     },
     children: [
-      {
-        path: '/build',
-        component: () => import('@/views/user/ships/FleetBuilder.vue')
-      },
-      {
-        path: '/upgrades',
-        component: () => import('@/views/user/ships/Upgrades.vue')
-      },
+      
     ]
+  },
+  {
+    path: '/build',
+    name: 'FleetBuild',
+    component: () => import('@/views/user/ships/FleetBuilder.vue')
+  },
+  {
+    path: '/upgrades',
+    name: 'Upgrades',
+    component: () => import('@/views/user/ships/Upgrades.vue')
   },
 ]
 
