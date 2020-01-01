@@ -43,11 +43,12 @@ import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
       }
     },
     computed: {
-      ...mapGetters('fleet', ['hasCommanderBeenChosen']),
+      ...mapGetters('fleet', ['hasCommanderBeenChosen', 'targetShip', 'unavailableUniqueUpgrades']),
       isAddButtonDisabled(){
         const config = {
           upgrade: this.upgrade,
-          hasCommanderBeenChosen: this.hasCommanderBeenChosen
+          hasCommanderBeenChosen: this.hasCommanderBeenChosen,
+          unavailableUniqueUpgrades: this.unavailableUniqueUpgrades
         }
         return determineIfAddButtonIsDisabled(config)
       },
@@ -57,12 +58,20 @@ import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
     },
     methods: {
       ...mapActions('ships',['addUpgradeToShip']),
+      ...mapActions('fleet',['trackUniqueUpgrades']),
       addUpgrade(selectedUpgrade){
-        const upgradeToAdd = {
-          ...selectedUpgrade,
-          trackableId: uuid()
+        try {
+          const targetUpgrade = this.targetShip.upgrades[this.upgradeType]
+          const upgradeTitle = targetUpgrade.title
+          if(targetUpgrade.unique){
+            this.trackUniqueUpgrades({ upgradeTitle, action: 'remove'})
+          }
         }
-        this.addUpgradeToShip(upgradeToAdd)
+        catch(error){
+          // no card set in that slot  
+        }
+        selectedUpgrade.trackableId = uuid()
+        this.addUpgradeToShip(selectedUpgrade)
       },
       finishLoading(){
         this.imageDoneLoading = true
