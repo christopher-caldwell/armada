@@ -6,7 +6,8 @@ export default {
     fleetName: '',
     hasCommanderBeenChosen: false,
     chosenFaction: 'imperial',
-    targetShip: null
+    targetShip: null,
+    unavailableUniqueUpgrades: {}
   },
   getters: {
     totalPoints(state){
@@ -20,6 +21,9 @@ export default {
     },
     targetShip(state){
       return state.targetShip
+    },
+    unavailableUniqueUpgrades(state){
+      return state.unavailableUniqueUpgrades
     }
   },
   actions: {
@@ -47,6 +51,11 @@ export default {
     updateTargetShip({ commit }, targetShip){
      commit('UPDATE_TARGET_SHIP', targetShip) 
     },
+    trackUniqueUpgrades({ commit }, { upgradeTitle, action }){
+      action === 'add'
+      ? commit('ADD_UNIQUE_UPGRADE', upgradeTitle)
+      : commit('REMOVE_UNIQUE_UPGRADE', upgradeTitle)
+    },
   },
   mutations: {
     UPDATE_TOTAL_POINTS(state, newTotalPoints){
@@ -69,6 +78,12 @@ export default {
     },
     UPDATE_TARGET_SHIP(state, targetShip){
       state.targetShip = targetShip
+    },
+    ADD_UNIQUE_UPGRADE(state, upgradeTitle){
+      state.unavailableUniqueUpgrades[upgradeTitle] = true
+    },
+    REMOVE_UNIQUE_UPGRADE(state, upgradeTitle){
+      delete state.unavailableUniqueUpgrades[upgradeTitle]
     }
   }
 }
