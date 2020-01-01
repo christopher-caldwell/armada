@@ -9,8 +9,13 @@ export const determineCardsToBeShown = config => {
 }
 
 export const determineIfAddButtonIsDisabled = config => {
-  const { upgrade, hasCommanderBeenChosen } = config
-  return upgrade.set === 'commander' && hasCommanderBeenChosen
+  const { upgrade, hasCommanderBeenChosen, unavailableUniqueUpgrades } = config
+  const upgradeTitle = upgrade.title
+  if(upgrade.set === 'commander'){
+    return unavailableUniqueUpgrades[upgradeTitle] && hasCommanderBeenChosen
+  } else {
+    return unavailableUniqueUpgrades[upgradeTitle]
+  }
 }
 
 const commander = (faction, upgradeType, upgradeCards) => {
