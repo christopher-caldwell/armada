@@ -24,6 +24,10 @@ export default {
       const points = upgradeToBeAdded.points
       commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded })
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
+      if (upgradeToBeAdded.unique){
+        const upgradeTitle = upgradeToBeAdded.title
+        dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action: 'add'}, {root: true})
+      }
       dispatch('fleet/addToFleetNotifications', {}, {root: true})
       if(upgradeToBeAdded.set === 'commander'){
         dispatch('fleet/updateCommanderStatus', {}, {root: true})
