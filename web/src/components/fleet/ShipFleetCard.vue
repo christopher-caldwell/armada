@@ -26,7 +26,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import UpgradeIcon from '@/components/icons/UpgradeIcon.vue'
+import UpgradeIcon from '@/components/upgrades/UpgradeIcon.vue'
   export default {
     name: 'FleetCard',
     props: {
