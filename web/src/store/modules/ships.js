@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    ships: []
+    ships: {}
   },
   getters: {
     ships(state){
@@ -46,18 +46,17 @@ export default {
   },
   mutations: {
     ADD_SHIP_TO_FLEET(state, newShipToBeAdded){
-      state.ships = {
-        ...state.ships,
-        [newShipToBeAdded.trackableId]: newShipToBeAdded
-      }
+      state.ships[newShipToBeAdded.trackableId] = newShipToBeAdded
     },
     REMOVE_SHIP(state, idOfShipToBeRemoved){
       delete state.ships[idOfShipToBeRemoved]
     },
     ADD_UPGRADE_TO_SHIP(state, { targetShipId, upgradeToBeAdded }){
       const upgradeType = upgradeToBeAdded.set
-      const shipUpgrades = state.ships[targetShipId].upgrades
-      shipUpgrades[upgradeType] = upgradeToBeAdded
+      state.ships[targetShipId].upgrades = {
+        ...state.ships[targetShipId].upgrades,
+        [upgradeType]: upgradeToBeAdded
+      }
     },
     REMOVE_UPGRADE_FROM_SHIP(state, { targetShipId, upgradeType }){
       const shipUpgrades = state.ships[targetShipId].upgrades
