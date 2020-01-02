@@ -1,5 +1,5 @@
 <template lang="pug">
-  span.armada-font.upgrade-icon( :style="styles") {{ iconText }}
+  span.armada-font.upgrade-icon(:style="styles") {{ iconText }}
 </template>
 
 <script>
