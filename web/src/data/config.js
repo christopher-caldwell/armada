@@ -19,6 +19,7 @@ export const fontMapping = {
   'commander': 'T',
   'officer': 'U',
   'offensive-retrofit': 'V',
+  'offensive-retrofit-2': 'V',
   'title': 'W',
   'weapons-team': 'X',
   'weapons-team-2': 'X',
