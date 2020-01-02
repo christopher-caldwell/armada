@@ -12,7 +12,7 @@ export const determineIfAddButtonIsDisabled = config => {
   const { upgrade, hasCommanderBeenChosen, unavailableUniqueUpgrades } = config
   const upgradeTitle = upgrade.title
   if(upgrade.set === 'commander'){
-    return unavailableUniqueUpgrades[upgradeTitle] && hasCommanderBeenChosen
+    return unavailableUniqueUpgrades[upgradeTitle] || hasCommanderBeenChosen
   } else {
     return unavailableUniqueUpgrades[upgradeTitle]
   }
