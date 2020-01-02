@@ -21,3 +21,17 @@ export const formatSeconds = seconds => {
 }
 
 export const capitalizeWord = wordToCapitalize => wordToCapitalize[0].toUpperCase() + wordToCapitalize.substr(1).toLowerCase()
+
+export const convertKebabToUpper = wordToCapitalize => {
+  if(wordToCapitalize.includes('-')){
+    const kebabArray = wordToCapitalize.split('-')
+    const reducedKebab = kebabArray.reduce((firstVal, secondVal) => {
+      const capitalizedFirstWord = capitalizeWord(firstVal)
+      const capitalizedSecondWord = capitalizeWord(secondVal)
+      return `${capitalizedFirstWord} ${capitalizedSecondWord}`  
+    })
+    return reducedKebab
+  } else {
+    return capitalizeWord(wordToCapitalize)
+  }
+}
