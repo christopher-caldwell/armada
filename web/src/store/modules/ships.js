@@ -1,3 +1,5 @@
+import { removeUniqueUpgradesFromShip, determineExtraActionForUpgrade } from '@/utilities/coreLogic'
+
 export default {
   namespaced: true,
   state: {
@@ -15,23 +17,18 @@ export default {
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
       dispatch('fleet/addToFleetNotifications', {}, {root: true})
     },
-    removeShipFromFleet({ commit, dispatch, }, { idOfShipToBeRemoved, points}){
+    removeShipFromFleet({ commit, dispatch, state }, { idOfShipToBeRemoved, points}){
       dispatch('fleet/updateFleetPoints',  { points, action: 'subtract' }, {root: true})
+      const shipToBeRemoved = state.ships[idOfShipToBeRemoved]
+      removeUniqueUpgradesFromShip(shipToBeRemoved, dispatch)
       commit('REMOVE_SHIP', idOfShipToBeRemoved)
     },
     addUpgradeToShip({ commit, dispatch, rootGetters }, upgradeToBeAdded){
       const targetShipId = rootGetters['fleet/targetShip'].trackableId
       const points = upgradeToBeAdded.points
-      commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded })
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
-      if (upgradeToBeAdded.unique){
-        const upgradeTitle = upgradeToBeAdded.title
-        dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action: 'add'}, {root: true})
-      }
-      dispatch('fleet/addToFleetNotifications', {}, {root: true})
-      if(upgradeToBeAdded.set === 'commander'){
-        dispatch('fleet/updateCommanderStatus', {}, {root: true})
-      }
+      determineExtraActionForUpgrade(dispatch, upgradeToBeAdded)
+      commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded })
     },
     removeUpgradeFromShip({ commit, dispatch, rootGetters }, upgradeToBeRemoved){
       const targetShipId = rootGetters['fleet/targetShip'].trackableId
