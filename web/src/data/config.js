@@ -26,6 +26,7 @@ export const fontMapping = {
   'ion-cannons': 'Y',
   'support-team': 'Z',
   'turbolasers': '[',
+  'turbolasers-2': '[',
   'defensive-retrofit': ']',
   'fleet-support': 'f',
   'fleet-command': 'f', // needs icon
@@ -37,3 +38,8 @@ export const fontMapping = {
   'republic': 'v',
   'cis': 'w',
 }
+
+export const successColor = '#5cb85c'
+export const grayColor = '#84848c'
+export const errorColor = '#d9534f'
+export const linkColor = '#2196f3'

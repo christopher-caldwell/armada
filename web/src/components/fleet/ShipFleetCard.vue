@@ -9,7 +9,7 @@
               v-col(cols='3' align='start') {{ ship.points }}
           v-expansion-panel-content
             v-row
-              v-col.no-padding(v-for="upgrade in allowableUpgrades" cols='2')
+              v-col.no-padding(v-for="upgrade in Object.entries(ship.upgrades)" cols='2')
                 router-link( 
                   :to="`/upgrades?type=${upgrade[0]}&shipType=${ship.type}`"
                   @click.native="updateTarget(ship, upgrade[0])"
@@ -44,10 +44,7 @@ import UpgradeIcon from '@/components/upgrades/UpgradeIcon.vue'
       UpgradeIcon
     },
     computed: {
-      ...mapGetters('fleet', ['targetShip']),
-      allowableUpgrades(){
-        return Object.entries(this.ship.upgrades)
-      },
+      ...mapGetters('fleet', ['targetShip'])
     },
     methods: {
       ...mapActions('ships', ['removeShipFromFleet', 'removeUpgradeFromShip']),
@@ -65,7 +62,7 @@ import UpgradeIcon from '@/components/upgrades/UpgradeIcon.vue'
       determineAddShadow(upgrade, ship){
         return this.targetUpgrade === upgrade && this.targetShip.trackableId === ship.trackableId
       }
-    }
+    },
   }
 </script>
 

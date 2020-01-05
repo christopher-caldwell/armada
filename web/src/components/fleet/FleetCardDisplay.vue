@@ -27,18 +27,18 @@
         v-col
           router-link(to='/fleet-viewer') Detailed View
     v-divider
-    FleetCard( v-for="(ship, index) in ships" :ship="ship" :key="ship.id + index")
+    ShipFleetCard( v-for="(ship, index) in ships" :ship="ship" :key="ship.trackableId")
     v-subheader Squadrons
     v-divider
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import FleetCard from '@/components/fleet/ShipFleetCard'
+import ShipFleetCard from '@/components/fleet/ShipFleetCard'
   export default {
     name: 'FleetCardDisplay',
     components: {
-      FleetCard
+      ShipFleetCard
     },
     computed: {
       ...mapGetters('ships', ['ships']),

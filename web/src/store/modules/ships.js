@@ -1,4 +1,4 @@
-import { removeUniqueUpgradesFromShip, determineExtraActionForUpgrade } from '@/utilities/coreLogic'
+import { removeUpgradesFromShip, determineExtraActionForUpgrade, removeUniqueUpgradeFromList } from '../helpers'
 
 export default {
   namespaced: true,
@@ -16,11 +16,12 @@ export default {
       commit('ADD_SHIP_TO_FLEET', shipToBeAdded)
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
       dispatch('fleet/addToFleetNotifications', {}, {root: true})
+      dispatch('fleet/updateTargetShip', shipToBeAdded, {root: true})
     },
     removeShipFromFleet({ commit, dispatch, state }, { idOfShipToBeRemoved, points}){
       dispatch('fleet/updateFleetPoints',  { points, action: 'subtract' }, {root: true})
       const shipToBeRemoved = state.ships[idOfShipToBeRemoved]
-      removeUniqueUpgradesFromShip(shipToBeRemoved, dispatch)
+      removeUpgradesFromShip(shipToBeRemoved, dispatch)
       commit('REMOVE_SHIP', idOfShipToBeRemoved)
     },
     addUpgradeToShip({ commit, dispatch, rootGetters }, upgradeToBeAdded){
@@ -28,7 +29,7 @@ export default {
       const points = upgradeToBeAdded.points
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
       determineExtraActionForUpgrade(dispatch, upgradeToBeAdded)
-      commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded })
+      commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded }) 
     },
     removeUpgradeFromShip({ commit, dispatch, rootGetters }, upgradeToBeRemoved){
       const targetShipId = rootGetters['fleet/targetShip'].trackableId
@@ -36,6 +37,9 @@ export default {
       const upgradeType = upgradeToBeRemoved.set
       commit('REMOVE_UPGRADE_FROM_SHIP', { targetShipId, upgradeType })
       dispatch('fleet/updateFleetPoints', { points, action: 'subtract'}, {root: true})
+      if(upgradeToBeRemoved.unique){
+        removeUniqueUpgradeFromList(upgradeToBeRemoved, dispatch)
+      }
       if(upgradeToBeRemoved.set === 'commander'){
         dispatch('fleet/updateCommanderStatus', {}, {root: true})
       }
@@ -43,7 +47,7 @@ export default {
   },
   mutations: {
     ADD_SHIP_TO_FLEET(state, newShipToBeAdded){
-      state.ships[newShipToBeAdded.trackableId] = newShipToBeAdded
+      state.ships[newShipToBeAdded.trackableId] = { ...newShipToBeAdded }
     },
     REMOVE_SHIP(state, idOfShipToBeRemoved){
       delete state.ships[idOfShipToBeRemoved]

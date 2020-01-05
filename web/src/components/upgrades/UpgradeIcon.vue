@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { fontMapping } from '@/data/config'
+import { fontMapping, successColor, grayColor, errorColor, linkColor } from '@/data/config'
 export default {
   name: 'UpgradeIcon',
   props: {
@@ -21,21 +21,24 @@ export default {
     }
   },
   computed: {
+    isUnableToBeFilled(){
+      return this.equippedCard
+        ? this.equippedCard.isUnableToBeFilled
+        : null
+    },
     iconColor(){
       if(this.isUnableToBeFilled){
-        return '#d9534f' // gray
+        return errorColor // error
       } else {
-        return this.equippedCard
-        ? '#5cb85c' // success
-        : '#84848c' //error
+        return this.equippedCard !== null
+          ? successColor // success
+          : grayColor // gray
       }
     },
     styles(){
-      return this.addShadow ? {
-        filter: `drop-shadow(-1px 0 3px ${this.shadowColor})`
-      } : {
-        color: this.iconColor
-      }
+      return this.addShadow
+        ? { filter: `drop-shadow(0px 0px 15px ${linkColor})`, color: this.iconColor }
+        : { color: this.iconColor }
     },
     iconText(){
       return fontMapping[this.upgradeName]

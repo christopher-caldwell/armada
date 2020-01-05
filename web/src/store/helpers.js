@@ -1,10 +1,22 @@
+export const removeUniqueUpgradeFromList = (upgrade, dispatch) => {
+  const upgradeTitle = upgrade.title
+  const points = upgrade.points
+  const action = 'remove'
+  dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action }, { root: true })
+  dispatch('fleet/updateFleetPoints', { points, action: 'remove'}, {root: true})
+  if(upgrade.set === 'commander'){
+    dispatch('fleet/updateCommanderStatus', {}, {root: true})
+  }
+}
+
 // removing unique upgrades from list in case ship is deleted with uniques equipped
-export const removeUniqueUpgradesFromShip = (shipToBeRemoved, dispatch) => {
+export const removeUpgradesFromShip = (shipToBeRemoved, dispatch) => {
   Object.values(shipToBeRemoved.upgrades).forEach(upgrade => {
-    if(upgrade.unique){
-      const upgradeTitle = upgrade.title
-      const action = 'remove'
-      dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action }, { root: true })
+    if(upgrade){
+      const points = upgrade.points
+      upgrade.unique
+      ? removeUniqueUpgradeFromList(upgrade, dispatch)
+      : dispatch('fleet/updateFleetPoints', { points, action: 'remove'}, {root: true})
     }
   })
 }
