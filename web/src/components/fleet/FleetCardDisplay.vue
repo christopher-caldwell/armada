@@ -15,8 +15,20 @@
     v-divider
     v-row(align='baseline')
       v-col(cols='1')
-      v-col(cols='4') Points: 
-      v-col {{ totalPoints }}
+      v-col(cols='3') Points: 
+      v-col 
+        v-row(align='baseline')
+          v-col(cols='3') {{ totalPoints }}
+          v-col(cols='2') /
+          v-col(cols='5')
+            v-text-field(
+              outlined 
+              dense
+              v-model="maxPoints" 
+              @blur="sendUpdateFleetName"
+              hide-details
+              type='tel'
+            )
     v-divider
     v-subheader
     v-subheader
@@ -46,7 +58,8 @@ import ShipFleetCard from '@/components/fleet/ShipFleetCard'
     },
     data(){
       return {
-        fleetName: ''
+        fleetName: '',
+        maxPoints: 400
       }
     },
     methods: {

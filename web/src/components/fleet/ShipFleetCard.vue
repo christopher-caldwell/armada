@@ -51,7 +51,7 @@ import UpgradeIcon from '@/components/upgrades/UpgradeIcon.vue'
       ...mapActions('fleet', ['updateTargetShip']),
       removeShip(idOfShipToBeRemoved, points){
         if(this.targetShip.trackableId === idOfShipToBeRemoved){
-          this.$route.push('/bu i zxx')
+          this.$router.push('/build')
         }
         this.removeShipFromFleet({ idOfShipToBeRemoved, points })
       },
