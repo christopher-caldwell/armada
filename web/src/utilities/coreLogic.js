@@ -9,10 +9,12 @@ export const determineCardsToBeShown = config => {
 }
 
 export const determineIfAddButtonIsDisabled = config => {
-  const { upgrade, hasCommanderBeenChosen, unavailableUniqueUpgrades } = config
+  const { upgrade, hasCommanderBeenChosen, unavailableUniqueUpgrades, targetShipUpgrades, targetUpgradeType } = config
   const upgradeTitle = upgrade.title
   if(upgrade.set === 'commander'){
     return unavailableUniqueUpgrades[upgradeTitle] || hasCommanderBeenChosen
+  } else if(targetShipUpgrades[targetUpgradeType] && targetShipUpgrades[targetUpgradeType].isUnableToBeFilled) {
+    return true
   } else {
     return unavailableUniqueUpgrades[upgradeTitle]
   }

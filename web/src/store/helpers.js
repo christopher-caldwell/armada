@@ -60,7 +60,7 @@ export const determineExtraActionForUpgrade = (dispatch, commit, targetShipId, u
   dispatch('fleet/addToFleetNotifications', {}, {root: true})
   if(upgradeToBeAdded.set === 'commander'){
     dispatch('fleet/updateCommanderStatus', {}, {root: true})
-  } else if(doubleUpgradeMap[upgradeToBeAdded.set] && upgradeToBeAdded.unique){
+  } else if(doubleUpgradeMap[upgradeToBeAdded.set]){
     const dualUpgradeToAdd = constructDualUpgradePlaceholder(upgradeToBeAdded)
     commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded: dualUpgradeToAdd })
   }

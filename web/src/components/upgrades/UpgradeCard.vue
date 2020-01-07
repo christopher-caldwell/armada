@@ -48,7 +48,9 @@ import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
         const config = {
           upgrade: this.upgrade,
           hasCommanderBeenChosen: this.hasCommanderBeenChosen,
-          unavailableUniqueUpgrades: this.unavailableUniqueUpgrades
+          unavailableUniqueUpgrades: this.unavailableUniqueUpgrades,
+          targetShipUpgrades: this.targetShip.upgrades,
+          targetUpgradeType: this.upgradeType
         }
         return determineIfAddButtonIsDisabled(config)
       },
