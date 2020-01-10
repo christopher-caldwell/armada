@@ -28,7 +28,7 @@
 <script>
 import uuid from 'uuid/v4'
 import { mapActions, mapGetters } from 'vuex'
-import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
+import { determineIfAddButtonIsDisabled, reformatMultipleUpgradeSlotsName } from '@/utilities/coreLogic'
   export default {
     name: 'UpgradeCard',
     props: {
@@ -45,17 +45,22 @@ import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
     computed: {
       ...mapGetters('fleet', ['hasCommanderBeenChosen', 'targetShip', 'unavailableUniqueUpgrades']),
       isAddButtonDisabled(){
-        const config = {
-          upgrade: this.upgrade,
-          hasCommanderBeenChosen: this.hasCommanderBeenChosen,
-          unavailableUniqueUpgrades: this.unavailableUniqueUpgrades,
-          targetShipUpgrades: this.targetShip.upgrades,
-          targetUpgradeType: this.upgradeType
+        try {
+          const config = {
+            upgrade: this.upgrade,
+            hasCommanderBeenChosen: this.hasCommanderBeenChosen,
+            unavailableUniqueUpgrades: this.unavailableUniqueUpgrades,
+            targetShipUpgrades: this.targetShip.upgrades,
+            targetUpgradeType: this.upgradeType
+          }
+          return determineIfAddButtonIsDisabled(config)
+        } catch(error){
+          // being re-routed due to no target ship
+          return false
         }
-        return determineIfAddButtonIsDisabled(config)
       },
       upgradeType(){
-        return this.$route.query.type
+        return reformatMultipleUpgradeSlotsName(this.$route.query.type)
       }
     },
     methods: {
@@ -63,6 +68,7 @@ import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
       ...mapActions('fleet',['trackUniqueUpgrades']),
       addUpgrade(selectedUpgrade){
         try {
+          // tracking if upgrade was previously equipped before adding this one
           const targetUpgrade = this.targetShip.upgrades[this.upgradeType]
           const upgradeTitle = targetUpgrade.title
           if(targetUpgrade.unique){
