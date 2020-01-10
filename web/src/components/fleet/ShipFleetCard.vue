@@ -56,6 +56,7 @@ import UpgradeIcon from '@/components/upgrades/UpgradeIcon.vue'
         this.removeShipFromFleet({ idOfShipToBeRemoved, points })
       },
       removeUpgrade(upgrade){
+        console.log('component updage to be removed', upgrade)
         this.removeUpgradeFromShip(upgrade)
       },
       updateTarget(targetShip, upgradeType){

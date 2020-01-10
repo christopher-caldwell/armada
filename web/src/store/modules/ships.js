@@ -1,4 +1,9 @@
-import { removeUpgradesFromShip, determineExtraActionForUpgrade, removeUniqueUpgradeFromList } from '../helpers'
+import { 
+  removeUpgradesFromShip,
+  determineExtraActionForUpgrade, 
+  removeUniqueUpgradeFromList,
+  removeDualUpgrade
+} from '../helpers'
 
 export default {
   namespaced: true,
@@ -38,6 +43,9 @@ export default {
       dispatch('fleet/updateFleetPoints', { points, action: 'subtract'}, {root: true})
       if(upgradeToBeRemoved.unique){
         removeUniqueUpgradeFromList(upgradeToBeRemoved, dispatch)
+      }
+      if(upgradeToBeRemoved.dual){
+        removeDualUpgrade(commit, upgradeToBeRemoved, targetShipId)
       }
       if(upgradeToBeRemoved.set === 'commander'){
         dispatch('fleet/updateCommanderStatus', {}, {root: true})

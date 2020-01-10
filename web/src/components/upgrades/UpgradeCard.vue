@@ -30,7 +30,7 @@ import uuid from 'uuid/v4'
 import { mapActions, mapGetters } from 'vuex'
 import { determineIfAddButtonIsDisabled } from '@/utilities/coreLogic'
   export default {
-    name: 'ShipCard',
+    name: 'UpgradeCard',
     props: {
       upgrade: {
         type: Object,

@@ -1,26 +1,3 @@
-export const removeUniqueUpgradeFromList = (upgrade, dispatch) => {
-  const upgradeTitle = upgrade.title
-  const points = upgrade.points
-  const action = 'remove'
-  dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action }, { root: true })
-  dispatch('fleet/updateFleetPoints', { points, action: 'remove'}, {root: true})
-  if(upgrade.set === 'commander'){
-    dispatch('fleet/updateCommanderStatus', {}, {root: true})
-  }
-}
-
-// removing unique upgrades from list in case ship is deleted with uniques equipped
-export const removeUpgradesFromShip = (shipToBeRemoved, dispatch) => {
-  Object.values(shipToBeRemoved.upgrades).forEach(upgrade => {
-    if(upgrade){
-      const points = upgrade.points
-      upgrade.unique
-      ? removeUniqueUpgradeFromList(upgrade, dispatch)
-      : dispatch('fleet/updateFleetPoints', { points, action: 'remove'}, {root: true})
-    }
-  })
-}
-
 const doubleUpgradeMap = {
   'offensive-retrofit': {
     dual: true,
@@ -47,9 +24,37 @@ const constructDualUpgradePlaceholder = upgradeToBeAdded => {
     points: 0,
     set,
     isUnableToBeFilled: true,
-    title
+    title,
+    dual: true
   }
   return upgradeResult
+}
+
+export const removeDualUpgrade = (commit, upgradeToBeRemoved, targetShipId) => {
+  const upgradeType = doubleUpgradeMap[upgradeToBeRemoved.set].counterpart
+  console.log('dual counterpart', upgradeType)
+  commit('REMOVE_UPGRADE_FROM_SHIP', { targetShipId, upgradeType })
+}
+
+export const removeUniqueUpgradeFromList = (upgrade, dispatch) => {
+  const upgradeTitle = upgrade.title
+  const action = 'remove'
+  dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action }, { root: true })
+  if(upgrade.set === 'commander'){
+    dispatch('fleet/updateCommanderStatus', {}, {root: true})
+  }
+}
+
+// removing unique upgrades from list in case ship is deleted with uniques equipped
+export const removeUpgradesFromShip = (shipToBeRemoved, dispatch) => {
+  Object.values(shipToBeRemoved.upgrades).forEach(upgrade => {
+    if(upgrade){
+      const points = upgrade.points
+      upgrade.unique
+      ? removeUniqueUpgradeFromList(upgrade, dispatch)
+      : dispatch('fleet/updateFleetPoints', { points, action: 'remove'}, {root: true})
+    }
+  })
 }
 
 export const determineExtraActionForUpgrade = (dispatch, commit, targetShipId, upgradeToBeAdded) => {

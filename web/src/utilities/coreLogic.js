@@ -1,8 +1,8 @@
-const reformatMultipleUpgradeSlotsName = upgradeSlotName => {
-  const splitName = upgradeSlotName.split('-')
-  const nameArray = [splitName[0], splitName[1]]
-  return nameArray.join('-')
-} 
+// const reformatMultipleUpgradeSlotsName = upgradeSlotName => {
+//   const splitName = upgradeSlotName.split('-')
+//   const nameArray = [splitName[0], splitName[1]]
+//   return nameArray.join('-')
+// } 
 
 export const determineCardsToBeShown = config => {
   const { upgradeType, faction, upgradeCards, shipType } = config
