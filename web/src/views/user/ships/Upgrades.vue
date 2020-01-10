@@ -30,16 +30,12 @@ import { mapGetters } from 'vuex'
       SearchCards
     },
     beforeRouteEnter(to, from, next){
-      const isProd = process.env.NODE_ENV === 'production'
-      if(isProd){
-        next(vm => {
-          vm.$store._modules.root.state.ships.ships.length
-          ? next()
-          : next('/build')
-        })
-      } else {
-        next()
-      }
+      next(vm => {
+        const ships = Object.values(vm.$store._modules.root.state.ships.ships)
+        ships.length
+        ? next()
+        : next('/build')
+      })
     },
     data(){
       return {
