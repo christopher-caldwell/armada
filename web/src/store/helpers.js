@@ -21,7 +21,38 @@ export const removeUpgradesFromShip = (shipToBeRemoved, dispatch) => {
   })
 }
 
-export const determineExtraActionForUpgrade = (dispatch, upgradeToBeAdded) => {
+const doubleUpgradeMap = {
+  'offensive-retrofit': {
+    dual: true,
+    counterpart: 'weapons-team'
+  },
+  'offensive-retrofit-2': {
+    dual: true,
+    counterpart: 'weapons-team'
+  },
+  'weapons-team': {
+    dual: true,
+    counterpart: 'offensive-retrofit'
+  },
+  'weapons-team-2': {
+    dual: true,
+    counterpart: 'offensive-retrofit'
+  }
+}
+
+const constructDualUpgradePlaceholder = upgradeToBeAdded => {
+  const set = doubleUpgradeMap[upgradeToBeAdded.set].counterpart
+  const { title } = upgradeToBeAdded
+  const upgradeResult = {
+    points: 0,
+    set,
+    isUnableToBeFilled: true,
+    title
+  }
+  return upgradeResult
+}
+
+export const determineExtraActionForUpgrade = (dispatch, commit, targetShipId, upgradeToBeAdded) => {
   if (upgradeToBeAdded.unique){
     const upgradeTitle = upgradeToBeAdded.title
     dispatch('fleet/trackUniqueUpgrades', { upgradeTitle, action: 'add'}, {root: true})
@@ -29,5 +60,10 @@ export const determineExtraActionForUpgrade = (dispatch, upgradeToBeAdded) => {
   dispatch('fleet/addToFleetNotifications', {}, {root: true})
   if(upgradeToBeAdded.set === 'commander'){
     dispatch('fleet/updateCommanderStatus', {}, {root: true})
+  } else if(doubleUpgradeMap[upgradeToBeAdded.set]){
+    const dualUpgradeToAdd = constructDualUpgradePlaceholder(upgradeToBeAdded)
+    commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded: dualUpgradeToAdd })
   }
+  commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded })
 }
+

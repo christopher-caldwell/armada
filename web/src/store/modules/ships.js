@@ -28,8 +28,7 @@ export default {
       const targetShipId = rootGetters['fleet/targetShip'].trackableId
       const points = upgradeToBeAdded.points
       dispatch('fleet/updateFleetPoints', { points, action: 'add'}, {root: true})
-      determineExtraActionForUpgrade(dispatch, upgradeToBeAdded)
-      commit('ADD_UPGRADE_TO_SHIP', { targetShipId, upgradeToBeAdded }) 
+      determineExtraActionForUpgrade(dispatch, commit, targetShipId, upgradeToBeAdded)
     },
     removeUpgradeFromShip({ commit, dispatch, rootGetters }, upgradeToBeRemoved){
       const targetShipId = rootGetters['fleet/targetShip'].trackableId
