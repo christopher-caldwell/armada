@@ -4,7 +4,7 @@ const upgradeCards = {
             {
                 'id': 1237,
                 'title': 'Admonition',
-                'image': 'admonition.png',
+                'image': 'admonition.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -14,7 +14,7 @@ const upgradeCards = {
             {
                 'id': 1010,
                 'title': 'Aspiration',
-                'image': 'aspiration.png',
+                'image': 'aspiration.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'rebel',
@@ -24,7 +24,7 @@ const upgradeCards = {
             {
                 'id': 1326,
                 'title': 'Bright Hope',
-                'image': 'bright-hope.png',
+                'image': 'bright-hope.jpg',
                 'set': 'title',
                 'points': 2,
                 'faction': 'rebel',
@@ -34,7 +34,7 @@ const upgradeCards = {
             {
                 'id': 1239,
                 'title': 'Defiance',
-                'image': 'defiance.png',
+                'image': 'defiance.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'rebel',
@@ -44,7 +44,7 @@ const upgradeCards = {
             {
                 'id': 1110,
                 'title': "Dodonna's Pride",
-                'image': 'dodonnas-pride.png',
+                'image': 'dodonnas-pride.jpg',
                 'set': 'title',
                 'points': 6,
                 'faction': 'rebel',
@@ -54,7 +54,7 @@ const upgradeCards = {
             {
                 'id': 1327,
                 'title': 'Endeavor',
-                'image': 'endeavor.png',
+                'image': 'endeavor.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'rebel',
@@ -64,7 +64,7 @@ const upgradeCards = {
             {
                 'id': 1238,
                 'title': 'Foresight',
-                'image': 'foresight.png',
+                'image': 'foresight.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -74,7 +74,7 @@ const upgradeCards = {
             {
                 'id': 1116,
                 'title': 'Gallant Haven',
-                'image': 'gallant-haven.png',
+                'image': 'gallant-haven.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -84,7 +84,7 @@ const upgradeCards = {
             {
                 'id': 2788,
                 'title': "Garel's Honor",
-                'image': 'swm27-garels-honor.png',
+                'image': 'swm27-garels-honor.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'rebel',
@@ -94,7 +94,7 @@ const upgradeCards = {
             {
                 'id': 1240,
                 'title': 'Home One',
-                'image': 'home-one.png',
+                'image': 'home-one.jpg',
                 'set': 'title',
                 'points': 7,
                 'faction': 'rebel',
@@ -104,7 +104,7 @@ const upgradeCards = {
             {
                 'id': 1241,
                 'title': 'Independence',
-                'image': 'independence.png',
+                'image': 'independence.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -114,7 +114,7 @@ const upgradeCards = {
             {
                 'id': 1111,
                 'title': "Jaina's Light",
-                'image': 'jainas-light.png',
+                'image': 'jainas-light.jpg',
                 'set': 'title',
                 'points': 2,
                 'faction': 'rebel',
@@ -124,7 +124,7 @@ const upgradeCards = {
             {
                 'id': 1328,
                 'title': 'Liberty',
-                'image': 'liberty.png',
+                'image': 'liberty.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'rebel',
@@ -134,7 +134,7 @@ const upgradeCards = {
             {
                 'id': 1329,
                 'title': 'Mon Karren',
-                'image': 'mon-karren.png',
+                'image': 'mon-karren.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -144,7 +144,7 @@ const upgradeCards = {
             {
                 'id': 1117,
                 'title': 'Paragon',
-                'image': 'paragon.png',
+                'image': 'paragon.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'rebel',
@@ -154,7 +154,7 @@ const upgradeCards = {
             {
                 'id': 1401,
                 'title': 'Phoenix Home',
-                'image': 'phoenix-home.png',
+                'image': 'phoenix-home.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'rebel',
@@ -164,7 +164,7 @@ const upgradeCards = {
             {
                 'id': 1281,
                 'title': 'Profundity',
-                'image': 'profundity.png',
+                'image': 'profundity.jpg',
                 'set': 'title',
                 'points': 7,
                 'faction': 'rebel',
@@ -174,7 +174,7 @@ const upgradeCards = {
             {
                 'id': 1325,
                 'title': 'Quantum Storm',
-                'image': 'quantum-storm.png',
+                'image': 'quantum-storm.jpg',
                 'set': 'title',
                 'points': 1,
                 'faction': 'rebel',
@@ -184,7 +184,7 @@ const upgradeCards = {
             {
                 'id': 1113,
                 'title': 'Redemption',
-                'image': 'redemption.png',
+                'image': 'redemption.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'rebel',
@@ -194,7 +194,7 @@ const upgradeCards = {
             {
                 'id': 1114,
                 'title': 'Salvation',
-                'image': 'salvation.png',
+                'image': 'salvation.jpg',
                 'set': 'title',
                 'points': 7,
                 'faction': 'rebel',
@@ -204,7 +204,7 @@ const upgradeCards = {
             {
                 'id': 1112,
                 'title': 'Tantive IV',
-                'image': 'tantive-iv.png',
+                'image': 'tantive-iv.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'rebel',
@@ -214,7 +214,7 @@ const upgradeCards = {
             {
                 'id': 1115,
                 'title': 'Yavaris',
-                'image': 'yavaris.png',
+                'image': 'yavaris.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'rebel',
@@ -224,7 +224,7 @@ const upgradeCards = {
             {
                 'id': 1001,
                 'title': 'Mon Calamari Exodus Fleet',
-                'image': 'mon-calamari-exodus-fleet.png',
+                'image': 'mon-calamari-exodus-fleet.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'rebel',
@@ -233,7 +233,7 @@ const upgradeCards = {
             {
                 'id': 2787,
                 'title': 'Task Force Antilles',
-                'image': 'swm27-task-force-antilles.png',
+                'image': 'swm27-task-force-antilles.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'rebel',
@@ -242,7 +242,7 @@ const upgradeCards = {
             {
                 'id': 2786,
                 'title': 'Task Force Organa',
-                'image': 'swm27-task-force-organa.png',
+                'image': 'swm27-task-force-organa.jpg',
                 'set': 'title',
                 'points': 1,
                 'faction': 'rebel',
@@ -254,7 +254,7 @@ const upgradeCards = {
             {
                 'id': 1232,
                 'title': 'Avenger',
-                'image': 'avenger.png',
+                'image': 'avenger.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'imperial',
@@ -266,7 +266,7 @@ const upgradeCards = {
             {
                 'id': 1391,
                 'title': 'Centicore',
-                'image': 'centicore.png',
+                'image': 'centicore.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -278,7 +278,7 @@ const upgradeCards = {
             {
                 'id': 1280,
                 'title': 'Chimaera',
-                'image': 'chimaera.png',
+                'image': 'chimaera.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -290,7 +290,7 @@ const upgradeCards = {
             {
                 'id': 1107,
                 'title': 'Corrupter',
-                'image': 'corrupter.png',
+                'image': 'corrupter.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'imperial',
@@ -302,7 +302,7 @@ const upgradeCards = {
             {
                 'id': 1233,
                 'title': 'Devastator',
-                'image': 'devastator.png',
+                'image': 'devastator.jpg',
                 'set': 'title',
                 'points': 10,
                 'faction': 'imperial',
@@ -314,7 +314,7 @@ const upgradeCards = {
             {
                 'id': 1118,
                 'title': 'Demolisher',
-                'image': 'demolisher.png',
+                'image': 'demolisher.jpg',
                 'set': 'title',
                 'points': 10,
                 'faction': 'imperial',
@@ -326,7 +326,7 @@ const upgradeCards = {
             {
                 'id': 1108,
                 'title': 'Dominator',
-                'image': 'dominator.png',
+                'image': 'dominator.jpg',
                 'set': 'title',
                 'points': 12,
                 'faction': 'imperial',
@@ -338,7 +338,7 @@ const upgradeCards = {
             {
                 'id': 1397,
                 'title': 'Hand of Justice',
-                'image': 'hand-of-justice.png',
+                'image': 'hand-of-justice.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -350,7 +350,7 @@ const upgradeCards = {
             {
                 'id': 1235,
                 'title': 'Impetuous',
-                'image': 'impetuous.png',
+                'image': 'impetuous.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -362,7 +362,7 @@ const upgradeCards = {
             {
                 'id': 1119,
                 'title': 'Insidious',
-                'image': 'insidious.png',
+                'image': 'insidious.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -374,7 +374,7 @@ const upgradeCards = {
             {
                 'id': 1236,
                 'title': 'Instigator',
-                'image': 'instigator.png',
+                'image': 'instigator.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -386,7 +386,7 @@ const upgradeCards = {
             {
                 'id': 1324,
                 'title': 'Interdictor',
-                'image': 'interdictor.png',
+                'image': 'interdictor.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -398,7 +398,7 @@ const upgradeCards = {
             {
                 'id': 2667,
                 'title': 'Pursuant',
-                'image': 'pursuant.png',
+                'image': 'pursuant.jpg',
                 'set': 'title',
                 'points': 2,
                 'faction': 'imperial',
@@ -410,7 +410,7 @@ const upgradeCards = {
             {
                 'id': 1234,
                 'title': 'Relentless',
-                'image': 'relentless.png',
+                'image': 'relentless.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -422,7 +422,7 @@ const upgradeCards = {
             {
                 'id': 1011,
                 'title': 'Sovereign',
-                'image': 'sovereign.png',
+                'image': 'sovereign.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -434,7 +434,7 @@ const upgradeCards = {
             {
                 'id': 2668,
                 'title': 'Squall',
-                'image': 'squall.png',
+                'image': 'squall.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -446,7 +446,7 @@ const upgradeCards = {
             {
                 'id': 2669,
                 'title': 'Stronghold',
-                'image': 'stronghold.png',
+                'image': 'stronghold.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'imperial',
@@ -458,7 +458,7 @@ const upgradeCards = {
             {
                 'id': 1323,
                 'title': 'Suppressor',
-                'image': 'suppressor.png',
+                'image': 'suppressor.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -470,7 +470,7 @@ const upgradeCards = {
             {
                 'id': 1322,
                 'title': 'Vector',
-                'image': 'vector.png',
+                'image': 'vector.jpg',
                 'set': 'title',
                 'points': 2,
                 'faction': 'imperial',
@@ -482,7 +482,7 @@ const upgradeCards = {
             {
                 'id': 1109,
                 'title': 'Warlord',
-                'image': 'warlord.png',
+                'image': 'warlord.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'imperial',
@@ -494,7 +494,7 @@ const upgradeCards = {
             {
                 'id': 1007,
                 'title': 'Seventh Fleet Star Destroyer',
-                'image': 'seventh-fleet.png',
+                'image': 'seventh-fleet.jpg',
                 'set': 'title',
                 'points': 5,
                 'faction': 'imperial',
@@ -508,7 +508,7 @@ const upgradeCards = {
             {
                 'id': 121213,
                 'title': 'Annihilator',
-                'image': 'annihilator.png',
+                'image': 'annihilator.jpg',
                 'set': 'title',
                 'points': 8,
                 'faction': 'imperial',
@@ -519,7 +519,7 @@ const upgradeCards = {
             {
                 'id': 1212134663,
                 'title': 'Eclipse',
-                'image': 'eclipse.png',
+                'image': 'eclipse.jpg',
                 'set': 'title',
                 'points': 3,
                 'faction': 'imperial',
@@ -530,7 +530,7 @@ const upgradeCards = {
             {
                 'id': 1444663,
                 'title': 'Executor',
-                'image': 'executor.png',
+                'image': 'executor.jpg',
                 'set': 'title',
                 'points': 2,
                 'faction': 'imperial',
@@ -541,7 +541,7 @@ const upgradeCards = {
             {
                 'id': 177745743,
                 'title': 'Ravager',
-                'image': 'ravager.png',
+                'image': 'ravager.jpg',
                 'set': 'title',
                 'points': 4,
                 'faction': 'imperial',
@@ -556,7 +556,7 @@ const upgradeCards = {
         {
             'id': 1394,
             'title': 'Dual Turbolaser Turrets',
-            'image': 'dual-turbolaser-turrets.png',
+            'image': 'dual-turbolaser-turrets.jpg',
             'set': 'turbolasers',
             'points': 5,
             'modification': true
@@ -564,7 +564,7 @@ const upgradeCards = {
         {
             'id': 1095,
             'title': 'Enhanced Armament',
-            'image': 'enhanced-armament.png',
+            'image': 'enhanced-armament.jpg',
             'set': 'turbolasers',
             'points': 10,
             'modification': true
@@ -579,14 +579,14 @@ const upgradeCards = {
         {
             'id': 1220,
             'title': 'Heavy Turbolaser Turrets',
-            'image': 'heavy-turbolaser-turrets.png',
+            'image': 'heavy-turbolaser-turrets.jpg',
             'set': 'turbolasers',
             'points': 6
         },
         {
             'id': 3137,
             'title': 'Quad Battery Turrets',
-            'image': 'quad-battery-turrets.png',
+            'image': 'quad-battery-turrets.jpg',
             'set': 'turbolasers',
             'points': 5,
             'modification': true
@@ -594,14 +594,14 @@ const upgradeCards = {
         {
             'id': 1319,
             'title': 'Quad Turbolaser Cannons',
-            'image': 'quad-turbolaser-cannons.png',
+            'image': 'quad-turbolaser-cannons.jpg',
             'set': 'turbolasers',
             'points': 10
         },
         {
             'id': 1229,
             'title': 'Slaved Turrets',
-            'image': 'slaved-turrets.png',
+            'image': 'slaved-turrets.jpg',
             'set': 'turbolasers',
             'points': 6,
             'modification': true
@@ -609,7 +609,7 @@ const upgradeCards = {
         {
             'id': 1318,
             'title': 'Spinal Armament',
-            'image': 'spinal-armament.png',
+            'image': 'spinal-armament.jpg',
             'set': 'turbolasers',
             'points': 9,
             'modification': true
@@ -617,14 +617,14 @@ const upgradeCards = {
         {
             'id': 1221,
             'title': 'Turbolaser Reroute Circuits',
-            'image': 'turbolaser-reroute-circuits.png',
+            'image': 'turbolaser-reroute-circuits.jpg',
             'set': 'turbolasers',
             'points': 7
         },
         {
             'id': 1097,
             'title': 'XI7 Turbolasers',
-            'image': 'xi7-turbolasers.png',
+            'image': 'xi7-turbolasers.jpg',
             'set': 'turbolasers',
             'points': 6
         },
@@ -641,14 +641,14 @@ const upgradeCards = {
         {
             'id': 1020,
             'title': 'Heavy Ion Emplacements',
-            'image': 'heavy-ion-emplacements.png',
+            'image': 'heavy-ion-emplacements.jpg',
             'set': 'ion-cannons',
             'points': 9
         },
         {
             'id': 1321,
             'title': 'High-Capacity Ion Turbines',
-            'image': 'high-capacity-ion-turbines.png',
+            'image': 'high-capacity-ion-turbines.jpg',
             'set': 'ion-cannons',
             'points': 8,
             'modification': true
@@ -656,42 +656,42 @@ const upgradeCards = {
         {
             'id': 1099,
             'title': 'Ion Cannon Batteries',
-            'image': 'ion-cannon-batteries.png',
+            'image': 'ion-cannon-batteries.jpg',
             'set': 'ion-cannons',
             'points': 5
         },
         {
             'id': 1100,
             'title': 'Leading Shots',
-            'image': 'leading-shots.png',
+            'image': 'leading-shots.jpg',
             'set': 'ion-cannons',
             'points': 4
         },
         {
             'id': 1320,
             'title': 'MS-1 Ion Cannons',
-            'image': 'ms-1-ion-cannons.png',
+            'image': 'ms-1-ion-cannons.jpg',
             'set': 'ion-cannons',
             'points': 2
         },
         {
             'id': 1272,
             'title': 'NK-7 Ion Cannons',
-            'image': 'nk-7-ion-cannons.png',
+            'image': 'nk-7-ion-cannons.jpg',
             'set': 'ion-cannons',
             'points': 10
         },
         {
             'id': 1101,
             'title': 'Overload Pulse',
-            'image': 'overload-pulse.png',
+            'image': 'overload-pulse.jpg',
             'set': 'ion-cannons',
             'points': 8
         },
         {
             'id': 1222,
             'title': 'SW-7 Ion Batteries',
-            'image': 'sw-7-ion-batteries.png',
+            'image': 'sw-7-ion-batteries.jpg',
             'set': 'ion-cannons',
             'points': 5
         },
@@ -701,21 +701,21 @@ const upgradeCards = {
         {
             'id': 1102,
             'title': 'Assault Concussion Missiles',
-            'image': 'assault-concussion-missiles.png',
+            'image': 'assault-concussion-missiles.jpg',
             'set': 'ordnance',
             'points': 7
         },
         {
             'id': 1223,
             'title': 'Assault Proton Torpedoes',
-            'image': 'assault-proton-torpedoes.png',
+            'image': 'assault-proton-torpedoes.jpg',
             'set': 'ordnance',
             'points': 5
         },
         {
             'id': 1103,
             'title': 'Expanded Launchers',
-            'image': 'expanded-launchers.png',
+            'image': 'expanded-launchers.jpg',
             'set': 'ordnance',
             'points': 13,
             'modification': true
@@ -723,28 +723,28 @@ const upgradeCards = {
         {
             'id': 2789,
             'title': 'External Racks',
-            'image': 'external-racks.png',
+            'image': 'external-racks.jpg',
             'set': 'ordnance',
             'points': 3
         },
         {
             'id': 1396,
             'title': 'Flechette Torpedoes',
-            'image': 'flechette-torpedoes.png',
+            'image': 'flechette-torpedoes.jpg',
             'set': 'ordnance',
             'points': 3
         },
         {
             'id': 1021,
             'title': 'Ordnance Pods',
-            'image': 'ordnance-pods.png',
+            'image': 'ordnance-pods.jpg',
             'set': 'ordnance',
             'points': 3
         },
         {
             'id': 1224,
             'title': 'Rapid Reload',
-            'image': 'rapid-reload.png',
+            'image': 'rapid-reload.jpg',
             'set': 'ordnance',
             'points': 8,
             'modification': true
@@ -752,7 +752,7 @@ const upgradeCards = {
         {
             'id': 1004,
             'title': 'Wide-Area Barrage',
-            'image': 'wide-area-barrage.png',
+            'image': 'wide-area-barrage.jpg',
             'set': 'ordnance',
             'points': 2
         },
@@ -762,7 +762,7 @@ const upgradeCards = {
         {
             'id': 1300,
             'title': 'G-8 Experimental Projector',
-            'image': 'g-8_experimental_projector.png',
+            'image': 'g-8_experimental_projector.jpg',
             'set': 'experimental-retrofit',
             'points': 8,
             'unique': true
@@ -770,7 +770,7 @@ const upgradeCards = {
         {
             'id': 1302,
             'title': 'Grav Shift Reroute',
-            'image': 'grav-shift-reroute.png',
+            'image': 'grav-shift-reroute.jpg',
             'set': 'experimental-retrofit',
             'points': 2,
             'unique': true
@@ -778,14 +778,14 @@ const upgradeCards = {
         {
             'id': 1299,
             'title': 'G7-X Grav Well Projector',
-            'image': 'g7_x_grav_well_projector.png',
+            'image': 'g7_x_grav_well_projector.jpg',
             'set': 'experimental-retrofit',
             'points': 2
         },
         {
             'id': 1301,
             'title': 'Targeting Scrambler',
-            'image': 'targeting-scrambler.png',
+            'image': 'targeting-scrambler.jpg',
             'set': 'experimental-retrofit',
             'points': 5
         },
@@ -795,35 +795,35 @@ const upgradeCards = {
         {
             'id': 1093,
             'title': 'Advanced Projectors',
-            'image': 'advanced-projectors.png',
+            'image': 'advanced-projectors.jpg',
             'set': 'defensive-retrofit',
             'points': 6
         },
         {
             'id': 1218,
             'title': 'Cluster Bombs',
-            'image': 'cluster-bombs.png',
+            'image': 'cluster-bombs.jpg',
             'set': 'defensive-retrofit',
             'points': 5
         },
         {
             'id': 1018,
             'title': 'Early Warning System',
-            'image': 'early-warning-system.png',
+            'image': 'early-warning-system.jpg',
             'set': 'defensive-retrofit',
             'points': 7
         },
         {
             'id': 1094,
             'title': 'Electronic Countermeasures',
-            'image': 'electronic-countermeasures.png',
+            'image': 'electronic-countermeasures.jpg',
             'set': 'defensive-retrofit',
             'points': 7
         },
         {
             'id': 1219,
             'title': 'Redundant Shields',
-            'image': 'redundant-shields.png',
+            'image': 'redundant-shields.jpg',
             'set': 'defensive-retrofit',
             'points': 8,
             'modification': true
@@ -831,7 +831,7 @@ const upgradeCards = {
         {
             'id': 1403,
             'title': 'Reinforced Blast Doors',
-            'image': 'reinforced-blast-doors.png',
+            'image': 'reinforced-blast-doors.jpg',
             'set': 'defensive-retrofit',
             'points': 5
         },
@@ -901,7 +901,7 @@ const upgradeCards = {
         {
             'id': 2790,
             'title': 'Cham Syndulla',
-            'image': 'cham-syndulla.png',
+            'image': 'cham-syndulla.jpg',
             'set': 'offensive-retrofit',
             'points': 5,
             'faction': 'rebel',
@@ -911,7 +911,7 @@ const upgradeCards = {
         {
             'id': 1005,
             'title': 'Jyn Erso',
-            'image': 'jyn-erso.png',
+            'image': 'jyn-erso.jpg',
             'set': 'offensive-retrofit',
             'points': 4,
             'faction': 'rebel',
@@ -949,7 +949,7 @@ const upgradeCards = {
         {
             'id': 1006,
             'title': 'Caitken and Shollan',
-            'image': 'caitken-and-shollan.png',
+            'image': 'caitken-and-shollan.jpg',
             'set': 'weapons-team',
             'points': 6,
             'faction': 'rebel',
@@ -958,49 +958,49 @@ const upgradeCards = {
         {
             'id': 1315,
             'title': 'Fire-Control Team',
-            'image': 'fire-control-team.png',
+            'image': 'fire-control-team.jpg',
             'set': 'weapons-team',
             'points': 2
         },
         {
             'id': 1085,
             'title': 'Flight Controllers',
-            'image': 'flight-controllers.png',
+            'image': 'flight-controllers.jpg',
             'set': 'weapons-team',
             'points': 6
         },
         {
             'id': 1086,
             'title': 'Gunnery Team',
-            'image': 'gunnery-team.png',
+            'image': 'gunnery-team.jpg',
             'set': 'weapons-team',
             'points': 7
         },
         {
             'id': 1211,
             'title': 'Ordnance Experts',
-            'image': 'ordnance-experts.png',
+            'image': 'ordnance-experts.jpg',
             'set': 'weapons-team',
             'points': 4
         },
         {
             'id': 1210,
             'title': 'Ruthless Strategists',
-            'image': 'ruthless-strategists.png',
+            'image': 'ruthless-strategists.jpg',
             'set': 'weapons-team',
             'points': 4
         },
         {
             'id': 1087,
             'title': 'Sensor Team',
-            'image': 'sensor-team.png',
+            'image': 'sensor-team.jpg',
             'set': 'weapons-team',
             'points': 5
         },
         {
             'id': 1314,
             'title': 'Veteran Gunners',
-            'image': 'veteran-gunners.png',
+            'image': 'veteran-gunners.jpg',
             'set': 'weapons-team',
             'points': 5
         },
@@ -1010,7 +1010,7 @@ const upgradeCards = {
         {
             'id': 2790,
             'title': 'Cham Syndulla',
-            'image': 'cham-syndulla.png',
+            'image': 'cham-syndulla.jpg',
             'set': 'weapons-team',
             'points': 5,
             'faction': 'rebel',
@@ -1020,7 +1020,7 @@ const upgradeCards = {
         {
             'id': 1005,
             'title': 'Jyn Erso',
-            'image': 'jyn-erso.png',
+            'image': 'jyn-erso.jpg',
             'set': 'weapons-team',
             'points': 4,
             'faction': 'rebel',
@@ -1030,7 +1030,7 @@ const upgradeCards = {
         {
             'id': 1013,
             'title': 'Darth Vader',
-            'image': 'darth-vader.png',
+            'image': 'darth-vader.jpg',
             'set': 'weapons-team',
             'points': 3,
             'faction': 'imperial',
@@ -1040,7 +1040,7 @@ const upgradeCards = {
         {
             'id': 2052,
             'title': 'Boarding Engineers',
-            'image': 'boarding-engineers.png',
+            'image': 'boarding-engineers.jpg',
             'set': 'weapons-team',
             'points': 2,
             'dual': 'offensive-retrofit'
@@ -1048,7 +1048,7 @@ const upgradeCards = {
         {
             'id': 2053,
             'title': 'Boarding Troopers',
-            'image': 'boarding-troopers.png',
+            'image': 'boarding-troopers.jpg',
             'set': 'weapons-team',
             'points': 3,
             'dual': 'offensive-retrofit'
@@ -1058,35 +1058,35 @@ const upgradeCards = {
         {
             'id': 1294,
             'title': 'Bomber Command Center',
-            'image': 'bomber-command-center.png',
+            'image': 'bomber-command-center.jpg',
             'set': 'fleet-support',
             'points': 8
         },
         {
             'id': 1295,
             'title': 'Comms Net',
-            'image': 'comms-net.png',
+            'image': 'comms-net.jpg',
             'set': 'fleet-support',
             'points': 2
         },
         {
             'id': 1298,
             'title': 'Jamming Field',
-            'image': 'jamming-field.png',
+            'image': 'jamming-field.jpg',
             'set': 'fleet-support',
             'points': 2
         },
         {
             'id': 1296,
             'title': 'Repair Crews',
-            'image': 'repair-crews.png',
+            'image': 'repair-crews.jpg',
             'set': 'fleet-support',
             'points': 4
         },
         {
             'id': 1297,
             'title': 'Slicer Tools',
-            'image': 'slicer-tools.png',
+            'image': 'slicer-tools.jpg',
             'set': 'fleet-support',
             'points': 7
         },
@@ -1095,7 +1095,7 @@ const upgradeCards = {
         {
             'id': 1390,
             'title': 'All fighters, Follow Me!',
-            'image': 'all-fighters-follow-me.png',
+            'image': 'all-fighters-follow-me.jpg',
             'set': 'fleet-command',
             'points': 5,
             'unique': true
@@ -1103,7 +1103,7 @@ const upgradeCards = {
         {
             'id': 1395,
             'title': 'Entrapment Formation!',
-            'image': 'entrapment-formation.png',
+            'image': 'entrapment-formation.jpg',
             'set': 'fleet-command',
             'points': 5,
             'unique': true
@@ -1111,7 +1111,7 @@ const upgradeCards = {
         {
             'id': 1282,
             'title': 'Intensify Firepower!',
-            'image': 'intensify-firepower.png',
+            'image': 'intensify-firepower.jpg',
             'set': 'fleet-command',
             'points': 6,
             'unique': true
@@ -1119,7 +1119,7 @@ const upgradeCards = {
         {
             'id': 1404,
             'title': 'Shields to Maximum!',
-            'image': 'shields-to-maximum.png',
+            'image': 'shields-to-maximum.jpg',
             'set': 'fleet-command',
             'points': 6,
             'unique': true
@@ -1129,42 +1129,42 @@ const upgradeCards = {
       {
           'id': 1088,
           'title': 'Engine Techs',
-          'image': 'engine-techs.png',
+          'image': 'engine-techs.jpg',
           'set': 'support-team',
           'points': 8
       },
       {
           'id': 1089,
           'title': 'Engineering Team',
-          'image': 'engineering-team.png',
+          'image': 'engineering-team.jpg',
           'set': 'support-team',
           'points': 5
       },
       {
           'id': 1316,
           'title': 'Fighter Coordination Team',
-          'image': 'fighter-coordination-team.png',
+          'image': 'fighter-coordination-team.jpg',
           'set': 'support-team',
           'points': 3
       },
       {
           'id': 1317,
           'title': 'Medical Team',
-          'image': 'medical-team.png',
+          'image': 'medical-team.jpg',
           'set': 'support-team',
           'points': 1
       },
       {
           'id': 1090,
           'title': 'Nav Team',
-          'image': 'nav-team.png',
+          'image': 'nav-team.jpg',
           'set': 'support-team',
           'points': 4
       },
       {
           'id': 1262,
           'title': 'Projection Experts',
-          'image': 'projection-experts.png',
+          'image': 'projection-experts.jpg',
           'set': 'support-team',
           'points': 6
       },
@@ -1173,7 +1173,7 @@ const upgradeCards = {
       {
             'id': 1075,
             'title': 'Adar Tallon',
-            'image': 'adar-tallon.png',
+            'image': 'adar-tallon.jpg',
             'set': 'officer',
             'points': 10,
             'faction': 'rebel',
@@ -1450,91 +1450,91 @@ const upgradeCards = {
         {
             'id': 1311,
             'title': 'Chart Officer',
-            'image': 'chart-officer.png',
+            'image': 'chart-officer.jpg',
             'set': 'officer',
             'points': 2
         },
         {
             'id': 1393,
             'title': 'Damage Control Officer',
-            'image': 'damage-control-officer.png',
+            'image': 'damage-control-officer.jpg',
             'set': 'officer',
             'points': 5
         },
         {
             'id': 1077,
             'title': 'Defense Liaison',
-            'image': 'defense-liaison.png',
+            'image': 'defense-liaison.jpg',
             'set': 'officer',
             'points': 3
         },
         {
             'id': 1225,
             'title': 'Engineering Captain',
-            'image': 'engineering-captain.png',
+            'image': 'engineering-captain.jpg',
             'set': 'officer',
             'points': 6
         },
         {
             'id': 1310,
             'title': 'Flight Commander',
-            'image': 'flight-commander.png',
+            'image': 'flight-commander.jpg',
             'set': 'officer',
             'points': 3
         },
         {
             'id': 1079,
             'title': 'Intel Officer',
-            'image': 'intel-officer.png',
+            'image': 'intel-officer.jpg',
             'set': 'officer',
             'points': 7
         },
         {
             'id': 1228,
             'title': 'Navigation Officer',
-            'image': 'navigation-officer.png',
+            'image': 'navigation-officer.jpg',
             'set': 'officer',
             'points': 6
         },
         {
             'id': 1312,
             'title': 'Skilled First Officer',
-            'image': 'skilled-first-officer.png',
+            'image': 'skilled-first-officer.jpg',
             'set': 'officer',
             'points': 1
         },
         {
             'id': 1209,
             'title': 'Support Officer',
-            'image': 'support-officer.png',
+            'image': 'support-officer.jpg',
             'set': 'officer',
             'points': 4
         },
         {
             'id': 1227,
             'title': 'Tactical Expert',
-            'image': 'tactical-expert.png',
+            'image': 'tactical-expert.jpg',
             'set': 'officer',
             'points': 6
         },
         {
             'id': 1082,
             'title': 'Veteran Captain',
-            'image': 'veteran-captain.png',
+            'image': 'veteran-captain.jpg',
             'set': 'officer',
             'points': 3
         },
         {
             'id': 1083,
             'title': 'Weapons Liaison',
-            'image': 'weapons-liaison.png',
+            'image': 'weapons-liaison.jpg',
             'set': 'officer',
             'points': 3
         },
         {
             'id': 1226,
             'title': 'Wing Commander',
-            'image': 'wing-commander.png',
+            'image': 'wing-commander.jpg',
             'set': 'officer',
             'points': 6
         },
@@ -1544,7 +1544,7 @@ const upgradeCards = {
             {
                 'id': 1178,
                 'title': 'Admiral Ackbar',
-                'image': 'admiral-ackbar.png',
+                'image': 'admiral-ackbar.jpg',
                 'set': 'commander',
                 'points': 38,
                 'faction': 'rebel',
@@ -1750,145 +1750,145 @@ const objectiveCards = [
     {
         'id': 1152,
         'title': 'Dangerous Territory',
-        'image': 'dangerous-territory.png',
+        'image': 'dangerous-territory.jpg',
         'set': 'navigation'
     },
     {
         'id': 1153,
         'title': 'Intel Sweep',
-        'image': 'intel-sweep.png',
+        'image': 'intel-sweep.jpg',
         'set': 'navigation'
     },
     {
         'id': 1154,
         'title': 'Minefields',
-        'image': 'minefields.png',
+        'image': 'minefields.jpg',
         'set': 'navigation'
     },
     {
         'id': 1380,
         'title': 'Navigational Hazards',
-        'image': 'navigational-hazards.png',
+        'image': 'navigational-hazards.jpg',
         'set': 'navigation'
     },
     {
         'id': 1381,
         'title': 'Salvage Run',
-        'image': 'salvage-run.png',
+        'image': 'salvage-run.jpg',
         'set': 'navigation'
     },
     {
         'id': 1382,
         'title': 'Sensor Net',
-        'image': 'sensor-net.png',
+        'image': 'sensor-net.jpg',
         'set': 'navigation'
     },
     {
         'id': 1383,
         'title': 'Solar Corona',
-        'image': 'solar-corona.png',
+        'image': 'solar-corona.jpg',
         'set': 'navigation'
     },
     {
         'id': 1155,
         'title': 'Superior Positions',
-        'image': 'superior-positions.png',
+        'image': 'superior-positions.jpg',
         'set': 'navigation'
     },
     {
         'id': 1387,
         'title': 'Capture the VIP',
-        'image': 'capture-the-vip.png',
+        'image': 'capture-the-vip.jpg',
         'set': 'defense'
     },
     {
         'id': 1148,
         'title': 'Contested Outpost',
-        'image': 'contested-outpost.png',
+        'image': 'contested-outpost.jpg',
         'set': 'defense'
     },
     {
         'id': 1384,
         'title': 'Fighter Ambush',
-        'image': 'fighter-ambush.png',
+        'image': 'fighter-ambush.jpg',
         'set': 'defense'
     },
     {
         'id': 1149,
         'title': 'Fire Lanes',
-        'image': 'fire-lanes.png',
+        'image': 'fire-lanes.jpg',
         'set': 'defense'
     },
     {
         'id': 1150,
         'title': 'Fleet Ambush',
-        'image': 'fleet-ambush.png',
+        'image': 'fleet-ambush.jpg',
         'set': 'defense'
     },
     {
         'id': 1151,
         'title': 'Hyperspace Assault',
-        'image': 'hyperspace-assault.png',
+        'image': 'hyperspace-assault.jpg',
         'set': 'defense'
     },
     {
         'id': 1385,
         'title': 'Jamming Barrier',
-        'image': 'jamming-barrier.png',
+        'image': 'jamming-barrier.jpg',
         'set': 'defense'
     },
     {
         'id': 1386,
         'title': 'Planetary Ion Cannon',
-        'image': 'planetary-ion-cannon.png',
+        'image': 'planetary-ion-cannon.jpg',
         'set': 'defense'
     },
     {
         'id': 1144,
         'title': 'Advanced Gunnery',
-        'image': 'advanced-gunnery.png',
+        'image': 'advanced-gunnery.jpg',
         'set': 'assault'
     },
     {
         'id': 1376,
         'title': 'Blockade Run',
-        'image': 'blockade-run.png',
+        'image': 'blockade-run.jpg',
         'set': 'assault'
     },
     {
         'id': 1377,
         'title': 'Close-Range Intel Scan',
-        'image': 'close-range-intel-scan.png',
+        'image': 'close-range-intel-scan.jpg',
         'set': 'assault'
     },
     {
         'id': 1145,
         'title': 'Most Wanted',
-        'image': 'most-wanted.png',
+        'image': 'most-wanted.jpg',
         'set': 'assault'
     },
     {
         'id': 1146,
         'title': 'Opening Salvo',
-        'image': 'opening-salvo.png',
+        'image': 'opening-salvo.jpg',
         'set': 'assault'
     },
     {
         'id': 1147,
         'title': 'Precision Strike',
-        'image': 'precision-strike.png',
+        'image': 'precision-strike.jpg',
         'set': 'assault'
     },
     {
         'id': 1378,
         'title': 'Station Assault',
-        'image': 'station-assault.png',
+        'image': 'station-assault.jpg',
         'set': 'assault'
     },
     {
         'id': 1379,
         'title': 'Targeting Beacons',
-        'image': 'targeting-beacons.png',
+        'image': 'targeting-beacons.jpg',
         'set': 'assault'
     }
 ]
@@ -2274,7 +2274,7 @@ const rebelShipCards = [
     {
         'id': 1043,
         'title': 'Assault Frigate Mk2 A',
-        'image': 'assault-frigate-mark-ii-a.png',
+        'image': 'assault-frigate-mark-ii-a.jpg',
         'set': 'ship',
         'type': 'assault-frigate',
         'points': 81,
@@ -2293,7 +2293,7 @@ const rebelShipCards = [
     {
         'id': 1044,
         'title': 'Assault Frigate Mk2 B',
-        'image': 'assault-frigate-mark-ii-b.png',
+        'image': 'assault-frigate-mark-ii-b.jpg',
         'set': 'ship',
         'type': 'assault-frigate',
         'points': 72,
@@ -2312,7 +2312,7 @@ const rebelShipCards = [
     {
         'id': 1045,
         'title': 'CR90 Corvette A',
-        'image': 'cr90-corvette-a.png',
+        'image': 'cr90-corvette-a.jpg',
         'set': 'ship',
         'type': 'corvette',
         'points': 44,
@@ -2330,7 +2330,7 @@ const rebelShipCards = [
     {
         'id': 1046,
         'title': 'CR90 Corvette B',
-        'image': 'cr90-corvette-b.png',
+        'image': 'cr90-corvette-b.jpg',
         'set': 'ship',
         'type': 'corvette',
         'points': 39,
@@ -2348,7 +2348,7 @@ const rebelShipCards = [
     {
         'id': 1277,
         'title': 'GR-75 Combat Retrofits',
-        'image': 'swm19-gr-75-combat-retrofits.png',
+        'image': 'swm19-gr-75-combat-retrofits.jpg',
         'set': 'ship',
         'type': 'gr-75',
         'points': 24,
@@ -2364,7 +2364,7 @@ const rebelShipCards = [
     {
         'id': 1276,
         'title': 'GR-75 Medium Transports',
-        'image': 'swm19-gr-75-medium-transports.png',
+        'image': 'swm19-gr-75-medium-transports.jpg',
         'set': 'ship',
         'type': 'gr-75',
         'points': 18,
@@ -2380,7 +2380,7 @@ const rebelShipCards = [
     {
         'id': 2783,
         'title': 'Hammerhead Scout Corvette',
-        'image': 'swm27-hammerhead-scout-corvette.png',
+        'image': 'swm27-hammerhead-scout-corvette.jpg',
         'set': 'ship',
         'type': 'hammerhead',
         'points': 41,
@@ -2398,7 +2398,7 @@ const rebelShipCards = [
     {
         'id': 2781,
         'title': 'Hammerhead Torpedo Corvette',
-        'image': 'swm27-hammerhead-torpedo-corvette.png',
+        'image': 'swm27-hammerhead-torpedo-corvette.jpg',
         'set': 'ship',
         'type': 'hammerhead',
         'points': 36,
@@ -2416,7 +2416,7 @@ const rebelShipCards = [
     {
         'id': 1186,
         'title': 'MC30c Scout Frigate',
-        'image': 'mc30c-scout-frigate.png',
+        'image': 'mc30c-scout-frigate.jpg',
         'set': 'ship',
         'type': 'mc30c-frigate',
         'points': 69,
@@ -2435,7 +2435,7 @@ const rebelShipCards = [
     {
         'id': 1187,
         'title': 'MC30c Torpedo Frigate',
-        'image': 'mc30c-torpedo-frigate.png',
+        'image': 'mc30c-torpedo-frigate.jpg',
         'set': 'ship',
         'type': 'mc30c-frigate',
         'points': 63,
@@ -2454,7 +2454,7 @@ const rebelShipCards = [
     {
         'id': 1002,
         'title': 'MC75 Armored Cruiser',
-        'image': 'mc75-armored-cruiser.png',
+        'image': 'mc75-armored-cruiser.jpg',
         'set': 'ship',
         'type': 'mc75-cruiser',
         'points': 104,
@@ -2475,7 +2475,7 @@ const rebelShipCards = [
     {
         'id': 1003,
         'title': 'MC75 Ordnance Cruiser',
-        'image': 'mc75-ordnance-cruiser.png',
+        'image': 'mc75-ordnance-cruiser.jpg',
         'set': 'ship',
         'type': 'mc75-cruiser',
         'points': 100,
@@ -2496,7 +2496,7 @@ const rebelShipCards = [
     {
         'id': 1188,
         'title': 'MC80 Assault Cruiser',
-        'image': 'mc80-assault-cruiser.png',
+        'image': 'mc80-assault-cruiser.jpg',
         'set': 'ship',
         'type': 'mc80-cruiser',
         'points': 114,
@@ -2516,7 +2516,7 @@ const rebelShipCards = [
     {
         'id': 1189,
         'title': 'MC80 Command Cruiser',
-        'image': 'mc80-command-cruiser.png',
+        'image': 'mc80-command-cruiser.jpg',
         'set': 'ship',
         'type': 'mc80-cruiser',
         'points': 106,
@@ -2536,7 +2536,7 @@ const rebelShipCards = [
     {
         'id': 1275,
         'title': 'MC80 Battle Cruiser',
-        'image': 'swm17-mc80-battle-cruiser.png',
+        'image': 'swm17-mc80-battle-cruiser.jpg',
         'set': 'ship',
         'type': 'mc80-liberty',
         'points': 103,
@@ -2556,7 +2556,7 @@ const rebelShipCards = [
     {
         'id': 1274,
         'title': 'MC80 Star Cruiser',
-        'image': 'swm17-mc80-star-cruiser.png',
+        'image': 'swm17-mc80-star-cruiser.jpg',
         'set': 'ship',
         'type': 'mc80-liberty',
         'points': 96,
@@ -2576,7 +2576,7 @@ const rebelShipCards = [
     {
         'id': 1047,
         'title': 'Nebulon-B Escort Frigate',
-        'image': 'nebulon-b-escort-frigate.png',
+        'image': 'nebulon-b-escort-frigate.jpg',
         'set': 'ship',
         'type': 'nebulon-b',
         'points': 57,
@@ -2593,7 +2593,7 @@ const rebelShipCards = [
     {
         'id': 1048,
         'title': 'Nebulon-B Support Refit',
-        'image': 'nebulon-b-support-refit.png',
+        'image': 'nebulon-b-support-refit.jpg',
         'set': 'ship',
         'type': 'nebulon-b',
         'points': 51,
@@ -2610,7 +2610,7 @@ const rebelShipCards = [
     {
         'id': 1334,
         'title': 'Pelta Assault Ship',
-        'image': 'pelta-class-assault-ship.png',
+        'image': 'pelta-class-assault-ship.jpg',
         'set': 'ship',
         'type': 'pelta',
         'points': 56,
@@ -2628,7 +2628,7 @@ const rebelShipCards = [
     {
         'id': 1335,
         'title': 'Pelta Command Ship',
-        'image': 'pelta-class-command-ship.png',
+        'image': 'pelta-class-command-ship.jpg',
         'set': 'ship',
         'type': 'pelta',
         'points': 60,
@@ -2650,7 +2650,7 @@ const squadronCards = [
     {
         'id': 1345,
         'title': 'Biggs Darklighter',
-        'image': 'biggs-darklighter.png',
+        'image': 'biggs-darklighter.jpg',
         'set': 'squadron',
         'type': 'x-wing',
         'points': 19,
@@ -2661,7 +2661,7 @@ const squadronCards = [
     {
         'id': 1351,
         'title': 'Corran Horn',
-        'image': 'corran-horn.png',
+        'image': 'corran-horn.jpg',
         'set': 'squadron',
         'type': 'e-wing',
         'points': 22,
@@ -2672,7 +2672,7 @@ const squadronCards = [
     {
         'id': 1352,
         'title': 'Dagger Squadron',
-        'image': 'dagger-squadron.png',
+        'image': 'dagger-squadron.jpg',
         'set': 'squadron',
         'type': 'b-wing',
         'points': 15,
@@ -2683,7 +2683,7 @@ const squadronCards = [
     {
         'id': 1260,
         'title': 'Dash Rendar',
-        'image': 'dash-rendar.png',
+        'image': 'dash-rendar.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 24,
@@ -2694,7 +2694,7 @@ const squadronCards = [
     {
         'id': 1133,
         'title': 'Dutch Vander',
-        'image': 'dutchvander.png',
+        'image': 'dutchvander.jpg',
         'set': 'squadron',
         'type': 'y-wing',
         'points': 16,
@@ -2705,7 +2705,7 @@ const squadronCards = [
     {
         'id': 1355,
         'title': 'Gold Squadron',
-        'image': 'gold-squadron.png',
+        'image': 'gold-squadron.jpg',
         'set': 'squadron',
         'type': 'y-wing',
         'points': 12,
@@ -2716,7 +2716,7 @@ const squadronCards = [
     {
         'id': 1356,
         'title': 'Green Squadron',
-        'image': 'green-squadron.png',
+        'image': 'green-squadron.jpg',
         'set': 'squadron',
         'type': 'a-wing',
         'points': 12,
@@ -2727,7 +2727,7 @@ const squadronCards = [
     {
         'id': 1258,
         'title': 'Han Solo',
-        'image': 'han-solo.png',
+        'image': 'han-solo.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 26,
@@ -2738,7 +2738,7 @@ const squadronCards = [
     {
         'id': 1357,
         'title': 'Hera Syndulla',
-        'image': 'hera-syndulla.png',
+        'image': 'hera-syndulla.jpg',
         'set': 'squadron',
         'type': 'vcx-100-freighter',
         'points': 28,
@@ -2749,7 +2749,7 @@ const squadronCards = [
     {
         'id': 1259,
         'title': 'Jan Ors',
-        'image': 'jan-ors.png',
+        'image': 'jan-ors.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 19,
@@ -2760,7 +2760,7 @@ const squadronCards = [
     {
         'id': 1358,
         'title': 'Ketsu Onyo',
-        'image': 'ketsu-onyo.png',
+        'image': 'ketsu-onyo.jpg',
         'set': 'squadron',
         'type': 'lancer-pursuit-craft',
         'points': 22,
@@ -2771,7 +2771,7 @@ const squadronCards = [
     {
         'id': 1134,
         'title': 'Keyan Farlander',
-        'image': 'keyanfarlander.png',
+        'image': 'keyanfarlander.jpg',
         'set': 'squadron',
         'type': 'b-wing',
         'points': 20,
@@ -2782,7 +2782,7 @@ const squadronCards = [
     {
         'id': 1347,
         'title': 'Lieutenant Blount',
-        'image': 'lieutenant-blount.png',
+        'image': 'lieutenant-blount.jpg',
         'set': 'squadron',
         'type': 'z-95',
         'points': 14,
@@ -2793,7 +2793,7 @@ const squadronCards = [
     {
         'id': 1135,
         'title': 'Luke Skywalker',
-        'image': 'luke-skywalker.png',
+        'image': 'luke-skywalker.jpg',
         'set': 'squadron',
         'type': 'x-wing',
         'points': 20,
@@ -2804,7 +2804,7 @@ const squadronCards = [
     {
         'id': 1405,
         'title': 'Norra Wexley',
-        'image': 'norra-wexley.png',
+        'image': 'norra-wexley.jpg',
         'set': 'squadron',
         'type': 'y-wing',
         'points': 17,
@@ -2815,7 +2815,7 @@ const squadronCards = [
     {
         'id': 1261,
         'title': 'Nym',
-        'image': 'nym.png',
+        'image': 'nym.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 21,
@@ -2826,7 +2826,7 @@ const squadronCards = [
     {
         'id': 1363,
         'title': 'Rogue Squadron',
-        'image': 'rogue-squadron.png',
+        'image': 'rogue-squadron.jpg',
         'set': 'squadron',
         'type': 'x-wing',
         'points': 14,
@@ -2837,7 +2837,7 @@ const squadronCards = [
     {
         'id': 1365,
         'title': 'Shara Bey',
-        'image': 'shara-bey.png',
+        'image': 'shara-bey.jpg',
         'set': 'squadron',
         'type': 'a-wing',
         'points': 17,
@@ -2848,7 +2848,7 @@ const squadronCards = [
     {
         'id': 1367,
         'title': 'Ten Numb',
-        'image': 'ten-numb.png',
+        'image': 'ten-numb.jpg',
         'set': 'squadron',
         'type': 'b-wing',
         'points': 19,
@@ -2859,7 +2859,7 @@ const squadronCards = [
     {
         'id': 1136,
         'title': 'Tycho Celchu',
-        'image': 'tycho.png',
+        'image': 'tycho.jpg',
         'set': 'squadron',
         'type': 'a-wing',
         'points': 16,
@@ -2870,7 +2870,7 @@ const squadronCards = [
     {
         'id': 1137,
         'title': 'Wedge Antilles',
-        'image': 'wedgeantilles.png',
+        'image': 'wedgeantilles.jpg',
         'set': 'squadron',
         'type': 'x-wing',
         'points': 19,
@@ -2881,7 +2881,7 @@ const squadronCards = [
     {
         'id': 1122,
         'title': 'TIE Fighter Squadron',
-        'image': 'tie-fighter-squadron.png',
+        'image': 'tie-fighter-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-fighter',
         'points': 8,
@@ -2892,7 +2892,7 @@ const squadronCards = [
     {
         'id': 1125,
         'title': 'Howlrunner',
-        'image': 'howlrunner.png',
+        'image': 'howlrunner.jpg',
         'set': 'squadron',
         'type': 'tie-fighter',
         'points': 16,
@@ -2903,7 +2903,7 @@ const squadronCards = [
     {
         'id': 1370,
         'title': 'Valen Rudor',
-        'image': 'valen-rudor.png',
+        'image': 'valen-rudor.jpg',
         'set': 'squadron',
         'type': 'tie-fighter',
         'points': 13,
@@ -2914,7 +2914,7 @@ const squadronCards = [
     {
         'id': 1127,
         'title': 'Mauler Mithel',
-        'image': 'mauler-mithel.png',
+        'image': 'mauler-mithel.jpg',
         'set': 'squadron',
         'type': 'tie-fighter',
         'points': 15,
@@ -2925,7 +2925,7 @@ const squadronCards = [
     {
         'id': 1346,
         'title': 'Black Squadron',
-        'image': 'black-squadron.png',
+        'image': 'black-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-fighter',
         'points': 9,
@@ -2936,7 +2936,7 @@ const squadronCards = [
     {
         'id': 1128,
         'title': 'TIE Interceptor',
-        'image': 'tie-interceptor-squadron.png',
+        'image': 'tie-interceptor-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-interceptor',
         'points': 11,
@@ -2947,7 +2947,7 @@ const squadronCards = [
     {
         'id': 1128,
         'title': 'Soontir Fel',
-        'image': 'soontir-fel.png',
+        'image': 'soontir-fel.jpg',
         'set': 'squadron',
         'type': 'tie-interceptor',
         'points': 18,
@@ -2958,7 +2958,7 @@ const squadronCards = [
     {
         'id': 1349,
         'title': 'Ciena Ree',
-        'image': 'ciena-ree.png',
+        'image': 'ciena-ree.jpg',
         'set': 'squadron',
         'type': 'tie-interceptor',
         'points': 17,
@@ -2969,7 +2969,7 @@ const squadronCards = [
     {
         'id': 1364,
         'title': 'Saber Squadron',
-        'image': 'saber-squadron.png',
+        'image': 'saber-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-interceptor',
         'points': 12,
@@ -2980,7 +2980,7 @@ const squadronCards = [
     {
         'id': 1253,
         'title': 'Boba Fett',
-        'image': 'bobafett.png',
+        'image': 'bobafett.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 26,
@@ -2991,7 +2991,7 @@ const squadronCards = [
     {
         'id': 1257,
         'title': 'Bossk',
-        'image': 'bossk.png',
+        'image': 'bossk.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 23,
@@ -3002,7 +3002,7 @@ const squadronCards = [
     {
         'id': 1348,
         'title': 'Captain Jonus',
-        'image': 'captain-jonus.png',
+        'image': 'captain-jonus.jpg',
         'set': 'squadron',
         'type': 'tie-bomber',
         'points': 16,
@@ -3013,7 +3013,7 @@ const squadronCards = [
     {
         'id': 1350,
         'title': 'Colonel Jendon',
-        'image': 'colonel-jendon.png',
+        'image': 'colonel-jendon.jpg',
         'set': 'squadron',
         'type': 'lambda-shuttle',
         'points': 20,
@@ -3024,7 +3024,7 @@ const squadronCards = [
     {
         'id': 1124,
         'title': 'Darth Vader',
-        'image': 'darth-vader.png',
+        'image': 'darth-vader.jpg',
         'set': 'squadron',
         'type': 'tie-advanced',
         'points': 21,
@@ -3035,7 +3035,7 @@ const squadronCards = [
     {
         'id': 1255,
         'title': 'Dengar',
-        'image': 'dengar.png',
+        'image': 'dengar.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 20,
@@ -3046,7 +3046,7 @@ const squadronCards = [
     {
         'id': 1354,
         'title': 'Gamma Squadron',
-        'image': 'gamma-squadron.png',
+        'image': 'gamma-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-bomber',
         'points': 10,
@@ -3057,7 +3057,7 @@ const squadronCards = [
     {
         'id': 1022,
         'title': 'Gar Saxon',
-        'image': 'gar-saxon.png',
+        'image': 'gar-saxon.jpg',
         'set': 'squadron',
         'type': 'mandalorian-gauntlet-fighter',
         'points': 23,
@@ -3069,7 +3069,7 @@ const squadronCards = [
     {
         'id': 1254,
         'title': 'IG-88',
-        'image': 'ig88.png',
+        'image': 'ig88.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 21,
@@ -3080,7 +3080,7 @@ const squadronCards = [
     {
         'id': 1361,
         'title': 'Maarek Stele',
-        'image': 'maarek-stele.png',
+        'image': 'maarek-stele.jpg',
         'set': 'squadron',
         'type': 'tie-defender',
         'points': 21,
@@ -3091,7 +3091,7 @@ const squadronCards = [
     {
         'id': 1126,
         'title': 'Major Rhymer',
-        'image': 'major-rhymer.png',
+        'image': 'major-rhymer.jpg',
         'set': 'squadron',
         'type': 'tie-bomber',
         'points': 16,
@@ -3103,7 +3103,7 @@ const squadronCards = [
     {
         'id': 1362,
         'title': 'Morna Kee',
-        'image': 'morna-kee.png',
+        'image': 'morna-kee.jpg',
         'set': 'squadron',
         'type': 'vt-49-decimator',
         'points': 27,
@@ -3116,7 +3116,7 @@ const squadronCards = [
     {
         'id': 1366,
         'title': 'Tempest Squadron',
-        'image': 'tempest-squadron.png',
+        'image': 'tempest-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-advanced',
         'points': 13,
@@ -3128,7 +3128,7 @@ const squadronCards = [
     {
         'id': 1373,
         'title': 'Whisper',
-        'image': 'whisper.png',
+        'image': 'whisper.jpg',
         'set': 'squadron',
         'type': 'tie-phantom',
         'points': 20,
@@ -3139,7 +3139,7 @@ const squadronCards = [
     {
         'id': 1375,
         'title': 'Zertik Strom',
-        'image': 'zertik-strom.png',
+        'image': 'zertik-strom.jpg',
         'set': 'squadron',
         'type': 'tie-advanced',
         'points': 15,
@@ -3153,7 +3153,7 @@ const squadronCards = [
     {
         'id': 1129,
         'title': 'A-wing Squadron',
-        'image': 'awingsquadron.png',
+        'image': 'awingsquadron.jpg',
         'set': 'squadron',
         'type': 'a-wing',
         'points': 11,
@@ -3163,7 +3163,7 @@ const squadronCards = [
     {
         'id': 1130,
         'title': 'B-wing Squadron',
-        'image': 'bwingsquadron.png',
+        'image': 'bwingsquadron.jpg',
         'set': 'squadron',
         'type': 'b-wing',
         'points': 14,
@@ -3173,7 +3173,7 @@ const squadronCards = [
     {
         'id': 1353,
         'title': 'E-wing Squadron',
-        'image': 'e-wing-squadron.png',
+        'image': 'e-wing-squadron.jpg',
         'set': 'squadron',
         'type': 'e-wing',
         'points': 15,
@@ -3183,7 +3183,7 @@ const squadronCards = [
     {
         'id': 1267,
         'title': 'HWK-290',
-        'image': 'hwk-290.png',
+        'image': 'hwk-290.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 12,
@@ -3193,7 +3193,7 @@ const squadronCards = [
     {
         'id': 1360,
         'title': 'Lancer Pursuit Craft',
-        'image': 'lancer-class-pursuit-craft.png',
+        'image': 'lancer-class-pursuit-craft.jpg',
         'set': 'squadron',
         'type': 'lancer-pursuit-craft',
         'points': 15,
@@ -3203,7 +3203,7 @@ const squadronCards = [
     {
         'id': 1268,
         'title': 'Scurrg H-6 Bomber',
-        'image': 'scurrg-h6.png',
+        'image': 'scurrg-h6.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 16,
@@ -3213,7 +3213,7 @@ const squadronCards = [
     {
         'id': 1371,
         'title': 'VCX-100 Freighter',
-        'image': 'vcx-100-freighter.png',
+        'image': 'vcx-100-freighter.jpg',
         'set': 'squadron',
         'type': 'vcx-100-freighter',
         'points': 15,
@@ -3223,7 +3223,7 @@ const squadronCards = [
     {
         'id': 1131,
         'title': 'X-wing Squadron',
-        'image': 'xwing-squadron.png',
+        'image': 'xwing-squadron.jpg',
         'set': 'squadron',
         'type': 'x-wing',
         'points': 13,
@@ -3233,7 +3233,7 @@ const squadronCards = [
     {
         'id': 1132,
         'title': 'Y-wing Squadron',
-        'image': 'ywingsquadron.png',
+        'image': 'ywingsquadron.jpg',
         'set': 'squadron',
         'type': 'y-wing',
         'points': 10,
@@ -3243,7 +3243,7 @@ const squadronCards = [
     {
         'id': 1265,
         'title': 'YT-1300',
-        'image': 'yt-1300.png',
+        'image': 'yt-1300.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 13,
@@ -3253,7 +3253,7 @@ const squadronCards = [
     {
         'id': 1266,
         'title': 'YT-2400',
-        'image': 'yt-2400.png',
+        'image': 'yt-2400.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 16,
@@ -3263,7 +3263,7 @@ const squadronCards = [
     {
         'id': 1374,
         'title': 'Z-95 Headhunter Squadron',
-        'image': 'z-95-headhunter-squadron.png',
+        'image': 'z-95-headhunter-squadron.jpg',
         'set': 'squadron',
         'type': 'z-95',
         'points': 7,
@@ -3273,7 +3273,7 @@ const squadronCards = [
     {
         'id': 1270,
         'title': 'Aggressor Assault Fighter',
-        'image': 'aggressor.png',
+        'image': 'aggressor.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 16,
@@ -3283,7 +3283,7 @@ const squadronCards = [
     {
         'id': 1242,
         'title': 'Firespray-31',
-        'image': 'firespray.png',
+        'image': 'firespray.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 18,
@@ -3293,7 +3293,7 @@ const squadronCards = [
     {
         'id': 1271,
         'title': 'JumpMaster 5000',
-        'image': 'jumpmaster-5000.png',
+        'image': 'jumpmaster-5000.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 12,
@@ -3303,7 +3303,7 @@ const squadronCards = [
     {
         'id': 1359,
         'title': 'Lambda Shuttle',
-        'image': 'lambda-class-shuttle.png',
+        'image': 'lambda-class-shuttle.jpg',
         'set': 'squadron',
         'type': 'lambda-shuttle',
         'points': 15,
@@ -3313,7 +3313,7 @@ const squadronCards = [
     {
         'id': 1009,
         'title': 'Mandalorian Gauntlet Fighter',
-        'image': 'mandalorian-gauntlet-fighter.png',
+        'image': 'mandalorian-gauntlet-fighter.jpg',
         'set': 'squadron',
         'type': 'mandalorian-gauntlet-fighter',
         'points': 20,
@@ -3325,7 +3325,7 @@ const squadronCards = [
     {
         'id': 1121,
         'title': 'TIE Bomber Squadron',
-        'image': 'tie-bomber-squadron.png',
+        'image': 'tie-bomber-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-bomber',
         'points': 9,
@@ -3335,7 +3335,7 @@ const squadronCards = [
     {
         'id': 1120,
         'title': 'TIE Advanced Squadron',
-        'image': 'tie-advanced-squadron.png',
+        'image': 'tie-advanced-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-advanced',
         'points': 12,
@@ -3345,7 +3345,7 @@ const squadronCards = [
     {
         'id': 1368,
         'title': 'TIE Defender Squadron',
-        'image': 'tie-defender-squadron.png',
+        'image': 'tie-defender-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-defender',
         'points': 16,
@@ -3355,7 +3355,7 @@ const squadronCards = [
     {
         'id': 1369,
         'title': 'TIE Phantom Squadron',
-        'image': 'tie-phantom-squadron.png',
+        'image': 'tie-phantom-squadron.jpg',
         'set': 'squadron',
         'type': 'tie-phantom',
         'points': 14,
@@ -3365,7 +3365,7 @@ const squadronCards = [
     {
         'id': 1372,
         'title': 'VT-49 Decimator',
-        'image': 'vt-49-decimator.png',
+        'image': 'vt-49-decimator.jpg',
         'set': 'squadron',
         'type': 'vt-49-decimator',
         'points': 22,
@@ -3375,7 +3375,7 @@ const squadronCards = [
     {
         'id': 1269,
         'title': 'YV-666',
-        'image': 'yv-666.png',
+        'image': 'yv-666.jpg',
         'set': 'squadron',
         'type': 'rogue-villain',
         'points': 15,
