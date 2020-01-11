@@ -572,7 +572,7 @@ const upgradeCards = {
         {
             'id': 1096,
             'title': 'H9 Turbolasers',
-            'image': 'h9-turbolasers.png',
+            'image': 'h9-turbolasers.jpg',
             'set': 'turbolasers',
             'points': 8
         },
@@ -631,7 +631,7 @@ const upgradeCards = {
         {
             'id': 1098,
             'title': 'XX-9 Turbolasers',
-            'image': 'xx9-turbolasers.png',
+            'image': 'xx9-turbolasers.jpg',
             'set': 'turbolasers',
             'points': 5
         },
@@ -841,35 +841,35 @@ const upgradeCards = {
         {
             'id': 1230,
             'title': 'Boosted Comms',
-            'image': 'boosted-comms.png',
+            'image': 'boosted-comms.jpg',
             'set': 'offensive-retrofit',
             'points': 4
         },
         {
             'id': 2673,
             'title': 'Disposable Capacitors',
-            'image': 'disposable-capacitors.png',
+            'image': 'disposable-capacitors.jpg',
             'set': 'offensive-retrofit',
             'points': 3
         },
         {
             'id': 1091,
             'title': 'Expanded Hangar Bay',
-            'image': 'expanded-hangar-bay.png',
+            'image': 'expanded-hangar-bay.jpg',
             'set': 'offensive-retrofit',
             'points': 5
         },
         {
             'id': 1019,
             'title': 'Hardend Bulkheads',
-            'image': 'hardend-bulkheads.png',
+            'image': 'hardend-bulkheads.jpg',
             'set': 'offensive-retrofit',
             'points': 5
         },
         {
             'id': 1212,
             'title': 'Phylon Q7 Tractor Beams',
-            'image': 'phylon-q7-tractor-beams.png',
+            'image': 'phylon-q7-tractor-beams.jpg',
             'set': 'offensive-retrofit',
             'points': 6,
             'modification': true
@@ -877,21 +877,21 @@ const upgradeCards = {
         {
             'id': 1092,
             'title': 'Point-Defense Reroute',
-            'image': 'point-defense-reroute.png',
+            'image': 'point-defense-reroute.jpg',
             'set': 'offensive-retrofit',
             'points': 5
         },
         {
             'id': 1214,
             'title': 'Quad Laser Turrets',
-            'image': 'quad-laser-turrets.png',
+            'image': 'quad-laser-turrets.jpg',
             'set': 'offensive-retrofit',
             'points': 5
         },
         {
             'id': 1402,
             'title': 'Rapid Launch Bays',
-            'image': 'rapid-launch-bays.png',
+            'image': 'rapid-launch-bays.jpg',
             'set': 'offensive-retrofit',
             'points': 6
         },
@@ -921,7 +921,7 @@ const upgradeCards = {
         {
             'id': 1013,
             'title': 'Darth Vader',
-            'image': 'darth-vader.png',
+            'image': 'darth-vader.jpg',
             'set': 'offensive-retrofit',
             'points': 3,
             'faction': 'imperial',
@@ -931,7 +931,7 @@ const upgradeCards = {
         {
             'id': 2052,
             'title': 'Boarding Engineers',
-            'image': 'boarding-engineers.png',
+            'image': 'boarding-engineers.jpg',
             'set': 'offensive-retrofit',
             'points': 2,
             'dual': 'weapons-team'
@@ -939,7 +939,7 @@ const upgradeCards = {
         {
             'id': 2053,
             'title': 'Boarding Troopers',
-            'image': 'boarding-troopers.png',
+            'image': 'boarding-troopers.jpg',
             'set': 'offensive-retrofit',
             'points': 3,
             'dual': 'weapons-team'
@@ -1182,7 +1182,7 @@ const upgradeCards = {
         {
             'id': 1388,
             'title': 'Ahsoka Tano',
-            'image': 'ahsoka-tano.png',
+            'image': 'ahsoka-tano.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'rebel',
@@ -1191,7 +1191,7 @@ const upgradeCards = {
         {
             'id': 1015,
             'title': 'Bail Organa',
-            'image': 'bail-organa.png',
+            'image': 'bail-organa.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'rebel',
@@ -1200,7 +1200,7 @@ const upgradeCards = {
         {
             'id': 1016,
             'title': 'General Draven',
-            'image': 'general-draven.png',
+            'image': 'general-draven.jpg',
             'set': 'officer',
             'points': 3,
             'faction': 'rebel',
@@ -1209,7 +1209,7 @@ const upgradeCards = {
         {
             'id': 1207,
             'title': 'Lando Carissian',
-            'image': 'lando-calrissian.png',
+            'image': 'lando-calrissian.jpg',
             'set': 'officer',
             'points': 4,
             'faction': 'rebel',
@@ -1218,7 +1218,7 @@ const upgradeCards = {
         {
             'id': 1080,
             'title': 'Leia Organa',
-            'image': 'leia-organa.png',
+            'image': 'leia-organa.jpg',
             'set': 'officer',
             'points': 3,
             'faction': 'rebel',
@@ -1227,7 +1227,7 @@ const upgradeCards = {
         {
             'id': 1398,
             'title': 'Major Derlin',
-            'image': 'major-derlin.png',
+            'image': 'major-derlin.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'rebel',
@@ -1236,7 +1236,7 @@ const upgradeCards = {
         {
             'id': 1081,
             'title': 'Ray Antilles',
-            'image': 'raymus-antilles.png',
+            'image': 'raymus-antilles.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'rebel',
@@ -1245,7 +1245,7 @@ const upgradeCards = {
         {
             'id': 1313,
             'title': 'Toryn Farr',
-            'image': 'toryn-farr.png',
+            'image': 'toryn-farr.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'rebel',
@@ -1254,7 +1254,7 @@ const upgradeCards = {
         {
             'id': 1208,
             'title': 'Walex Blissex',
-            'image': 'walex-blissex.png',
+            'image': 'walex-blissex.jpg',
             'set': 'officer',
             'points': 5,
             'faction': 'rebel',
@@ -1263,7 +1263,7 @@ const upgradeCards = {
         {
             'id': 1076,
             'title': 'Admiral Chiraneau',
-            'image': 'admiral-chiraneau.png',
+            'image': 'admiral-chiraneau.jpg',
             'set': 'officer',
             'points': 10,
             'faction': 'imperial',
@@ -1272,7 +1272,7 @@ const upgradeCards = {
         {
             'id': 1205,
             'title': 'Admiral Montferrat',
-            'image': 'admiral-montferrat.png',
+            'image': 'admiral-montferrat.jpg',
             'set': 'officer',
             'points': 5,
             'faction': 'imperial',
@@ -1281,7 +1281,7 @@ const upgradeCards = {
         {
             'id': 1308,
             'title': 'Admiral Titus',
-            'image': 'admiral-titus.png',
+            'image': 'admiral-titus.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'imperial',
@@ -1290,7 +1290,7 @@ const upgradeCards = {
         {
             'id': 1307,
             'title': 'Agent Kallus',
-            'image': 'agent-kallus.png',
+            'image': 'agent-kallus.jpg',
             'set': 'officer',
             'points': 3,
             'faction': 'imperial',
@@ -1299,7 +1299,7 @@ const upgradeCards = {
         {
             'id': 1012,
             'title': 'Captain Brunson',
-            'image': 'captain-brunson.png',
+            'image': 'captain-brunson.jpg',
             'set': 'officer',
             'points': 5,
             'faction': 'imperial',
@@ -1308,7 +1308,7 @@ const upgradeCards = {
         {
             'id': 1206,
             'title': 'Captain Needa',
-            'image': 'captain-needa.png',
+            'image': 'captain-needa.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'imperial',
@@ -1317,7 +1317,7 @@ const upgradeCards = {
         {
             'id': 1309,
             'title': 'Commandant Aresko',
-            'image': 'commandant-aresko.png',
+            'image': 'commandant-aresko.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'imperial',
@@ -1326,7 +1326,7 @@ const upgradeCards = {
         {
             'id': 1309,
             'title': 'Commander Gherant',
-            'image': 'commander-gherant.png',
+            'image': 'commander-gherant.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'imperial',
@@ -1335,7 +1335,7 @@ const upgradeCards = {
         {
             'id': 1121209,
             'title': 'Darth Vader',
-            'image': 'darth-vader.png',
+            'image': 'darth-vader.jpg',
             'set': 'officer',
             'points': 1,
             'faction': 'imperial',
@@ -1344,7 +1344,7 @@ const upgradeCards = {
         {
             'id': 1078,
             'title': 'Director Isard',
-            'image': 'director-isard.png',
+            'image': 'director-isard.jpg',
             'set': 'officer',
             'points': 3,
             'faction': 'imperial',
@@ -1353,7 +1353,7 @@ const upgradeCards = {
         {
             'id': 1072128,
             'title': 'Director Krennic',
-            'image': 'director-krennic.png',
+            'image': 'director-krennic.jpg',
             'set': 'officer',
             'points': 8,
             'faction': 'imperial',
@@ -1362,7 +1362,7 @@ const upgradeCards = {
         {
             'id': 107212128,
             'title': 'Emperor Palpatine',
-            'image': 'emperor-palpatine.png',
+            'image': 'emperor-palpatine.jpg',
             'set': 'officer',
             'points': 3,
             'faction': 'imperial',
@@ -1371,7 +1371,7 @@ const upgradeCards = {
         {
             'id': 1104,
             'title': 'Governor Pryce',
-            'image': 'governor-pryce.png',
+            'image': 'governor-pryce.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'imperial',
@@ -1380,7 +1380,7 @@ const upgradeCards = {
         {
             'id': 1014,
             'title': 'Instructor Goran',
-            'image': 'instructor-goran.png',
+            'image': 'instructor-goran.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'imperial',
@@ -1389,7 +1389,7 @@ const upgradeCards = {
         {
             'id': 1011212,
             'title': 'Lira Wessex',
-            'image': 'lira-wessex.png',
+            'image': 'lira-wessex.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'imperial',
@@ -1398,7 +1398,7 @@ const upgradeCards = {
         {
             'id': 1399,
             'title': 'Minister Tua',
-            'image': 'minister-tua.png',
+            'image': 'minister-tua.jpg',
             'set': 'officer',
             'points': 2,
             'faction': 'imperial',
@@ -1407,7 +1407,7 @@ const upgradeCards = {
         {
             'id': 1008,
             'title': 'Taskmaster Grint',
-            'image': 'taskmaster-grint.png',
+            'image': 'taskmaster-grint.jpg',
             'set': 'officer',
             'points': 5,
             'faction': 'imperial',
@@ -1416,7 +1416,7 @@ const upgradeCards = {
         {
             'id': 2672,
             'title': 'The Grand Inquisitor',
-            'image': 'the-grand-inquisitor.png',
+            'image': 'the-grand-inquisitor.jpg',
             'set': 'officer',
             'points': 4,
             'faction': 'imperial',
@@ -1425,7 +1425,7 @@ const upgradeCards = {
         {
             'id': 1084,
             'title': 'Wulff Yularen',
-            'image': 'wulff-yularen.png',
+            'image': 'wulff-yularen.jpg',
             'set': 'officer',
             'points': 7,
             'faction': 'imperial',
@@ -1434,7 +1434,7 @@ const upgradeCards = {
         {
             'id': 2791,
             'title': 'Hondo Ohnaka',
-            'image': 'hondo-ohnaka.png',
+            'image': 'hondo-ohnaka.jpg',
             'set': 'officer',
             'points': 2,
             'unique': true
@@ -1442,7 +1442,7 @@ const upgradeCards = {
         {
             'id': 1017,
             'title': 'Strategic Adviser',
-            'image': 'strategic-adviser.png',
+            'image': 'strategic-adviser.jpg',
             'set': 'officer',
             'points': 4,
             'unique': true
@@ -1553,7 +1553,7 @@ const upgradeCards = {
             {
                 'id': 1283,
                 'title': 'Admiral Raddus',
-                'image': 'admiral-raddus.png',
+                'image': 'admiral-raddus.jpg',
                 'set': 'commander',
                 'points': 26,
                 'faction': 'rebel',
@@ -1562,7 +1562,7 @@ const upgradeCards = {
             {
                 'id': 1392,
                 'title': 'Commander Sato',
-                'image': 'commander-sato.png',
+                'image': 'commander-sato.jpg',
                 'set': 'commander',
                 'points': 32,
                 'faction': 'rebel',
@@ -1571,7 +1571,7 @@ const upgradeCards = {
             {
                 'id': 1071,
                 'title': 'Garm Bel Iblis',
-                'image': 'garm-bel-iblis.png',
+                'image': 'garm-bel-iblis.jpg',
                 'set': 'commander',
                 'points': 25,
                 'faction': 'rebel',
@@ -1580,7 +1580,7 @@ const upgradeCards = {
             {
                 'id': 1305,
                 'title': 'General Cracken',
-                'image': 'general-cracken.png',
+                'image': 'general-cracken.jpg',
                 'set': 'commander',
                 'points': 26,
                 'faction': 'rebel',
@@ -1589,7 +1589,7 @@ const upgradeCards = {
             {
                 'id': 1072,
                 'title': 'General Dodonna',
-                'image': 'general-dodonna.png',
+                'image': 'general-dodonna.jpg',
                 'set': 'commander',
                 'points': 20,
                 'faction': 'rebel',
@@ -1598,7 +1598,7 @@ const upgradeCards = {
             {
                 'id': 1306,
                 'title': 'General Madine',
-                'image': 'general_madine.png',
+                'image': 'general_madine.jpg',
                 'set': 'commander',
                 'points': 30,
                 'faction': 'rebel',
@@ -1607,7 +1607,7 @@ const upgradeCards = {
             {
                 'id': 1181,
                 'title': 'General Rieekan',
-                'image': 'general-rieekan.png',
+                'image': 'general-rieekan.jpg',
                 'set': 'commander',
                 'points': 30,
                 'faction': 'rebel',
@@ -1616,7 +1616,7 @@ const upgradeCards = {
             {
                 'id': 2785,
                 'title': 'Leia Organa',
-                'image': 'swm27-leia-organa.png',
+                'image': 'swm27-leia-organa.jpg',
                 'set': 'commander',
                 'points': 38,
                 'faction': 'rebel',
@@ -1625,7 +1625,7 @@ const upgradeCards = {
             {
                 'id': 1074,
                 'title': 'Mon Mothma',
-                'image': 'mon-mothma.png',
+                'image': 'mon-mothma.jpg',
                 'set': 'commander',
                 'points': 30,
                 'faction': 'rebel',
@@ -1634,7 +1634,7 @@ const upgradeCards = {
             {
                 'id': 1304,
                 'title': 'Admiral Konstantine',
-                'image': 'admiral-konstantine.png',
+                'image': 'admiral-konstantine.jpg',
                 'set': 'commander',
                 'points': 23,
                 'faction': 'imperial',
@@ -1646,7 +1646,7 @@ const upgradeCards = {
             {
                 'id': 1069,
                 'title': 'Admiral Motti',
-                'image': 'admiral-motti.png',
+                'image': 'admiral-motti.jpg',
                 'set': 'commander',
                 'points': 24,
                 'faction': 'imperial',
@@ -1655,7 +1655,7 @@ const upgradeCards = {
             {
               'id': 1179,
               'title': 'Admiral Ozzel',
-              'image': 'admiral-ozzel.png',
+              'image': 'admiral-ozzel.jpg',
               'set': 'commander',
               'points': 20,
               'faction': 'imperial',
@@ -1664,7 +1664,7 @@ const upgradeCards = {
             {
               'id': 1179,
               'title': 'Admiral Piett',
-              'image': 'admiral-piett.png',
+              'image': 'admiral-piett.jpg',
               'set': 'commander',
               'points': 22,
               'faction': 'imperial',
@@ -1673,7 +1673,7 @@ const upgradeCards = {
             {
               'id': 1070,
               'title': 'Admiral Screed',
-              'image': 'admiral-screed.png',
+              'image': 'admiral-screed.jpg',
               'set': 'commander',
               'points': 26,
               'faction': 'imperial',
@@ -1682,7 +1682,7 @@ const upgradeCards = {
             {
               'id': 2670,
               'title': 'Admiral Sloane',
-              'image': 'admiral-sloane.png',
+              'image': 'admiral-sloane.jpg',
               'set': 'commander',
               'points': 24,
               'faction': 'imperial',
@@ -1691,7 +1691,7 @@ const upgradeCards = {
             {
               'id': 1180,
               'title': 'Darth Vader',
-              'image': 'darth-vader-commander.png',
+              'image': 'darth-vader-commander.jpg',
               'set': 'commander',
               'points': 36,
               'faction': 'imperial',
@@ -1700,7 +1700,7 @@ const upgradeCards = {
             {
               'id': 1182,
               'title': 'Emperor Palpatine',
-              'image': 'palpatine.png',
+              'image': 'palpatine.jpg',
               'set': 'commander',
               'points': 35,
               'faction': 'imperial',
@@ -1709,7 +1709,7 @@ const upgradeCards = {
             {
               'id': 1303,
               'title': 'General Tagge',
-              'image': 'general-tagge.png',
+              'image': 'general-tagge.jpg',
               'set': 'commander',
               'points': 25,
               'faction': 'imperial',
@@ -1718,7 +1718,7 @@ const upgradeCards = {
             {
               'id': 1284,
               'title': 'Grand Admiral Thrawn',
-              'image': 'grand-admiral-thrawn.png',
+              'image': 'grand-admiral-thrawn.jpg',
               'set': 'commander',
               'points': 32,
               'faction': 'imperial',
@@ -1727,7 +1727,7 @@ const upgradeCards = {
             {
               'id': 1073,
               'title': 'Grand Moff Tarkin',
-              'image': 'tarkin.png',
+              'image': 'tarkin.jpg',
               'set': 'commander',
               'points': 38,
               'faction': 'imperial',
@@ -1736,7 +1736,7 @@ const upgradeCards = {
             {
               'id': 1400,
               'title': 'Moff Jerjerrod',
-              'image': 'moff-jerjerrod.png',
+              'image': 'moff-jerjerrod.jpg',
               'set': 'commander',
               'points': 23,
               'faction': 'imperial',
