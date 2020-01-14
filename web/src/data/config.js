@@ -18,6 +18,8 @@ export const fontMapping = {
   'ordnance': 'S',
   'commander': 'T',
   'officer': 'U',
+  'officer-2': 'U',
+  'officer-3': 'U',
   'offensive-retrofit': 'V',
   'offensive-retrofit-2': 'V',
   'title': 'W',
@@ -30,6 +32,8 @@ export const fontMapping = {
   'defensive-retrofit': ']',
   'fleet-support': 'f',
   'fleet-command': 'f', // needs icon
+  'fleet-command-2': 'f', // needs icon
+  'experimental-retrofit': 'e',
   // factions
   'empire-alt': 'u',
   'empire': 's',

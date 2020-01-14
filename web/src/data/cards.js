@@ -1124,6 +1124,14 @@ const upgradeCards = {
             'points': 6,
             'unique': true
         },
+        {
+            'id': 1404,
+            'title': 'Take Evasive Action!',
+            'image': 'take-evasive-action.jpg',
+            'set': 'fleet-command',
+            'points': 6,
+            'unique': true
+        },
     ],
     'support-team': [
       {
