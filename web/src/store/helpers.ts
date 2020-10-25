@@ -1,23 +1,30 @@
-const doubleUpgradeMap = {
+import { Upgrade } from '@/interfaces'
+
+export interface DoubleUpgradeMapOptions {
+  isDual: boolean,
+  counterpart: 'weapons-team' | 'offensive-retrofit'
+}
+
+const doubleUpgradeMap: { [key: string]: DoubleUpgradeMapOptions } = {
   'offensive-retrofit': {
-    dual: true,
+    isDual: true,
     counterpart: 'weapons-team'
   },
   'offensive-retrofit-2': {
-    dual: true,
+    isDual: true,
     counterpart: 'weapons-team'
   },
   'weapons-team': {
-    dual: true,
+    isDual: true,
     counterpart: 'offensive-retrofit'
   },
   'weapons-team-2': {
-    dual: true,
+    isDual: true,
     counterpart: 'offensive-retrofit'
   }
 }
 
-const constructDualUpgradePlaceholder = upgradeToBeAdded => {
+const constructDualUpgradePlaceholder = (upgradeToBeAdded: Upgrade) => {
   const set = doubleUpgradeMap[upgradeToBeAdded.set].counterpart
   const { title } = upgradeToBeAdded
   const upgradeResult = {

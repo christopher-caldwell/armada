@@ -1,20 +1,27 @@
 <template lang="pug">
-  v-app
-    Header
-    v-content
-      router-view
+v-app
+  Header
+  v-content
+    router-view
 </template>
 
-<script>
+<script lang='ts'>
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
+
 import Header from '@/components/header/Header.vue'
 
-export default {
+@Component({
+  name: 'App',
   components: {
-    Header
-  }
-}
+    Header,
+  },
+})
+class App extends Vue {}
+
+export default App
 </script>
 
 <style lang='sass'>
-  @import '@/styles/main.sass'
+@import '@/styles/main.sass'
 </style>

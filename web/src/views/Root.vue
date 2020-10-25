@@ -1,16 +1,22 @@
 <template lang='pug'>
-  div.main-cont
-    Crawl
+.main-cont
+  Crawl
 </template>
 
-<script>
+<script lang='ts'>
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
+
 import Crawl from '@/components/util/Crawl'
 
-export default {
+@Component({
   components: {
-    Crawl
+    Crawl,
   },
-}
+})
+class Root extends Vue {}
+
+export default Root
 </script>
 
 <style lang='sass' scoped>
