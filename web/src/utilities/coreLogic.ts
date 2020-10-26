@@ -1,3 +1,5 @@
+import { Faction } from '@/interfaces/'
+
 // const determineIfShipHasDual = targetShipUpgrades => {
 //   const upgradeValues = Object.values(targetShipUpgrades)
 //   let hasDualEquipped = false
@@ -45,11 +47,11 @@ export const determineIfAddButtonIsDisabled = config => {
   }
 }
 
-const commander = (faction, upgradeType, upgradeCards) => {
+const commander = (faction: Faction, upgradeType, upgradeCards) => {
   return upgradeCards[upgradeType][faction]
 }
 
-const title = (faction, upgradeType, upgradeCards, shipType) => {
+const title = (faction: Faction, upgradeType, upgradeCards, shipType) => {
   const cardsToFilter = upgradeCards[upgradeType][faction]
   return cardsToFilter.filter(card => {
     const typeOfShip = shipType
@@ -57,9 +59,9 @@ const title = (faction, upgradeType, upgradeCards, shipType) => {
   })
 }
 
-const officer = (faction, upgradeType, upgradeCards) => {
+const officer = (faction: Faction, upgradeType, upgradeCards) => {
   const cardsToFilter = upgradeCards[upgradeType]
-  return cardsToFilter.filter(card => card.faction === faction)
+  return cardsToFilter.filter(card => card.faction: Faction === faction: Faction)
 }
 
 const actionMap = {

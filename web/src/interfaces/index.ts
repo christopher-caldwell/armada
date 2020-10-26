@@ -1,6 +1,7 @@
 export type Set = 'commander'
 
 export interface Upgrade {
+  title: string
   points: number
   set: Set
   isUnique: boolean
@@ -10,5 +11,7 @@ export interface Upgrade {
 export interface Ship {
   points: number
   trackableId?: string
-  upgrades: {[key: string]: Upgrade}
+  upgrades: {[key: string]: Upgrade | null} 
 }
+
+export type Faction = 'rebel' | 'imperial'

@@ -11,7 +11,7 @@ import {
   determineExtraActionForUpgrade, 
   removeUniqueUpgradeFromList,
   removeDualUpgrade
-} from '../../helpers'
+} from '@/store/helpers'
 
 export const actions: ActionTree<ShipState, RootState> = {
   addShipToFleet({ commit, dispatch }, shipToBeAdded: Ship){
